@@ -1,0 +1,81 @@
+{
+  "name": "olho-com",
+  "version": "0.0.0",
+  "description": "",
+  "main": "src/index.ts",
+  "scripts": {
+    "start": "npm run docker:up:loc",
+    "prebuild": "npm run clean:dist",
+    "build": "bash scripts/build.sh",
+    "build:analyze": "cross-env-shell BUILD_ANALYZE=true bash ./scripts/build.sh",
+    "build:loc": "bash scripts/build.loc.sh",
+    "build:loc:analyze": "cross-env-shell BUILD_ANALYZE=true bash ./scripts/build.loc.sh",
+    "cm": "npx git-cz",
+    "check:all": "run-p lint types:check",
+    "clean:dist": "rm -rf dist/static",
+    "lint": "npx eslint src --config ./configs/eslint.config.js  --ext .ts,.tsx,.json --ignore-pattern '/node_modules/*' --ignore-pattern '**/*.d.ts' --ignore-pattern '**/*.spec.ts' --ignore-pattern '/src/assets/**'",
+    "lint:fix": "npm run lint --fix",
+    "types:check": "tsc -p tsconfig.json",
+    "types:watch": "npm run types:check -- --watch",
+    "watch": "run-p types:watch watch:loc",
+    "watch:loc": "bash scripts/watch.loc.sh"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run check:all",
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS --config=./configs/commitlint.config.js"
+    }
+  },
+  "config": {
+    "commitizen": {
+      "path": "node_modules/cz-conventional-changelog"
+    }
+  },
+  "author": "Oleksii Honchar",
+  "license": "MIT",
+  "dependencies": {
+    "@hapi/joi": "17.1.0",
+    "env-cmd": "10.0.1",
+    "faker": "4.1.0",
+    "lodash": "4.17.15",
+    "npm-run-all": "^4.1.5"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "8.3.5",
+    "@commitlint/config-conventional": "8.3.4",
+    "@types/hapi__joi": "16.0.8",
+    "@types/lodash": "4.14.149",
+    "@types/uuid": "3.4.6",
+    "@typescript-eslint/eslint-plugin": "^2.18.0",
+    "@typescript-eslint/parser": "^2.18.0",
+    "commitizen": "4.0.3",
+    "compression-webpack-plugin": "^3.1.0",
+    "copy-webpack-plugin": "5.1.1",
+    "cross-env": "7.0.0",
+    "cz-conventional-changelog": "3.0.2",
+    "eslint": "6.8.0",
+    "eslint-config-airbnb-base": "14.0.0",
+    "eslint-config-prettier": "^6.9.0",
+    "eslint-import-resolver-typescript": "^2.0.0",
+    "eslint-plugin-import": "^2.20.0",
+    "eslint-plugin-json": "2.0.1",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-node": "11.0.0",
+    "eslint-plugin-prettier": "^3.1.2",
+    "husky": "4.2.1",
+    "lodash-webpack-plugin": "^0.11.5",
+    "prettier": "1.19.1",
+    "rimraf": "3.0.0",
+    "source-map-loader": "0.2.4",
+    "ts-loader": "6.2.1",
+    "tsconfig-paths-webpack-plugin": "^3.2.0",
+    "typescript": "3.7.5",
+    "webpack": "4.41.5",
+    "webpack-bundle-analyzer": "3.6.0",
+    "webpack-cli": "3.3.10",
+    "webpack-merge": "4.2.2"
+  },
+  "engines": {
+    "node": "12"
+  }
+}

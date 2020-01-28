@@ -5,7 +5,8 @@ env-cmd -f $envFile "$PWD/devops/local/scripts/check-env-vars.sh"
 source $envFile
 
 env-cmd -f $envFile \
-    webpack \
+    webpack-dev-server \
         --config ./configs/webpack.config.js \
         --mode development \
-        --env.BUILD_ANALYZE=$BUILD_ANALYZE
+        --env.BUILD_ANALYZE=false \
+        --open

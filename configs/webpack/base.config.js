@@ -10,10 +10,16 @@ console.log('[config:webpack:snippet] Base loaded');
 const pkg = require('../../package.json');
 
 module.exports = (env) => ({
-  target: 'node',
   cache: true,
+  devServer: {
+    // http2: true,
+    port: process.env.SERVE_PORT,
+    contentBase: path.join(__dirname, '../../dist'),
+    publicPath: '/assets/',
+    writeToDisk: true,
+  },
   entry: {
-    bundle: './src/index.ts',
+    bundle: './src/index.tsx',
   },
   resolve: {
     extensions: ['.js', '.jsx', '.html', '.ts', '.tsx'],
@@ -35,28 +41,24 @@ module.exports = (env) => ({
   },
   plugins: [
     new LodashModuleReplacementPlugin(),
+    new webpack.DefinePlugin({
+      'process.env': {
+        NODE_ENV: JSON.stringify(process.env.NODE_ENV),
+      },
+      'PKG_NAME': JSON.stringify(pkg.name),
+      'PKG_VERSION': JSON.stringify(pkg.version),
+    }),
     new LoaderOptionsPlugin({
       debug: process.env.NODE_ENV !== 'production',
     }),
-    new CopyWebpackPlugin([
-      { from: './src/assets', to: './assets', ignore: ['*.js.map', '*.css.map'] },
-      { from: './src/swagger.json', to: './assets/swagger.json' },
-    ])
-
+    new CopyWebpackPlugin([{
+      from: './src/assets',
+      to: '.',
+      ignore: [ '*.hbs' ],
+    }]),
     // new webpack.optimize.ModuleConcatenationPlugin()
   ],
-  node: { // for wa should be false
-    fs: 'empty',
-    global: true,
-    crypto: 'empty',
-    process: true,
-    console: true,
-    module: false,
-    clearImmediate: false,
-    setImmediate: false,
-    __dirname: false,
-    __filename: false
-  },
+  node: false,
   watchOptions: {
     aggregateTimeout: 3000,
   } 

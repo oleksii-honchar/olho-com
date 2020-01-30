@@ -1,13 +1,10 @@
-const fs = require('fs');
-const path = require('path');
-const hbs = require('handlebars');
 const webpackMerge = require('webpack-merge');
 const { BundleAnalyzerPlugin } = require('webpack-bundle-analyzer')
 
 // Short usage reference
 // `NODE_ENV` = development | test | production
 // `LOG_LEVEL` = error | warn | info | debug
-
+const generateIndexHtml = require('./webpack/libs/generateIndexHtml');
 const pkg = require('../package.json');
 
 const moduleCfg = require('./webpack/module.config');
@@ -15,26 +12,6 @@ const baseCfg = require('./webpack/base.config');
 const prodCfg = require('./webpack/prod.config');
 
 console.log(`[config:webpack] "${pkg.name}" config composition started`);
-
-function generateIndexHtml (env) {
-  const data = {
-    NODE_ENV: process.env.NODE_ENV
-  };
-
-  const tmplPath = path.join(__dirname, '../src/assets/index.hbs');
-  const source = fs.readFileSync(tmplPath, 'utf-8');
-
-  const tmpl = hbs.compile(source);
-  const html = tmpl(data);
-
-  const destPath = path.join(__dirname, '../dist/');
-  try {
-    fs.mkdirSync(destPath, { recursive:true });
-  } catch (e) {
-    console.error(e);
-  }
-  fs.writeFileSync(destPath + 'index.html', html, 'utf8');
-}
 
 module.exports = (env) => {
   env = env ? env : {};

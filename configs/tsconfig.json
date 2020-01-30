@@ -11,6 +11,7 @@
     "incremental": true,
     "importHelpers": true, // Import emit helpers from 'tslib'
     "isolatedModules": false, // Transpile each file as a separate module (similar to 'ts.transpileModule')
+    "jsx": "react",
     "lib": [
       "dom",
       "esnext" // This allows you to use the latest JavaScript language features
@@ -18,6 +19,7 @@
     "module": "commonjs",
     "newLine": "lf",
     "noEmit": true, // Do not emit outputs
+    "noImplicitAny": true,
     "noLib": false, // Do not include the default library file (lib.d.ts).
     "noStrictGenericChecks": true, // Disable strict checking of generic signatures in function types.
     "paths": {

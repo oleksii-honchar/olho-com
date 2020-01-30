@@ -13,20 +13,20 @@ module.exports = {
   },
   extends: [
     'airbnb-base',
+    'plugin:@typescript-eslint/eslint-recommended',
+    'plugin:@typescript-eslint/recommended',
+    'plugin:react/recommended',
     'plugin:prettier/recommended'
   ],
   rules: {
-    'space-before-function-paren': [
-      'error',
-      'always',
-    ],
+    '@typescript-eslint/no-unused-vars': 'off',
+    'react/react-in-jsx-scope' : 0,
     'class-methods-use-this': 'off',
     'dot-notation': ['error', { 'allowPattern': '^(code)$' }],
     'function-paren-newline': [
       'error',
       'consistent',
     ],
-    'no-unused-vars': 'off',
     'import/prefer-default-export': 'off',
     'import/no-unresolved': 'error',
     'max-len': [
@@ -42,11 +42,24 @@ module.exports = {
     ],
     'no-underscore-dangle': ['error', { 'allow': ['_id', '_headers'] }],
     'quote-props': ['error', 'consistent-as-needed'],
+    // 'react/jsx-no-bind': [2, { ignoreRefs: true }],
+    // 'react/jsx-no-duplicate-props': 2,
+    // 'react/self-closing-comp': 2,
+    // 'react/prefer-es6-class': 2,
+    // 'react/no-string-refs': 2,
+    // 'react/require-render-return': 2,
+    // 'react/no-find-dom-node': 2,
+    // 'react/no-is-mounted': 2,
+    // 'react/jsx-no-comment-textnodes': 2,
+    // 'react/jsx-curly-spacing': 2,
+    // 'react/jsx-no-undef': 2,
+    // 'react/jsx-uses-react': 2,
+    // 'react/jsx-uses-vars': 2
   },
   env: {
     browser: true,
     node: true,
-    es6: true,
+    es6: true
   },
   globals: {
     beforeEach: true,
@@ -58,9 +71,14 @@ module.exports = {
   plugins: [
     '@typescript-eslint',
     'json',
+    'react',
     'import'
   ],
   settings: {
+    'react': {
+      pragma: 'h',
+      version: 'detect',
+    },
     'import/extensions': ['.js','.jsx','.ts','.tsx'],
     'import/parsers': {
       '@typescript-eslint/parser': ['.ts','.tsx']

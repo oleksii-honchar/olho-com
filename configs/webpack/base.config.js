@@ -44,9 +44,10 @@ module.exports = (env) => ({
     new webpack.DefinePlugin({
       'process.env': {
         NODE_ENV: JSON.stringify(process.env.NODE_ENV),
+        LOG_LEVEL: JSON.stringify(process.env.LOG_LEVEL),
+        PKG_NAME: JSON.stringify(pkg.name),
+        PKG_VERSION: JSON.stringify(pkg.version)
       },
-      'PKG_NAME': JSON.stringify(pkg.name),
-      'PKG_VERSION': JSON.stringify(pkg.version),
     }),
     new LoaderOptionsPlugin({
       debug: process.env.NODE_ENV !== 'production',

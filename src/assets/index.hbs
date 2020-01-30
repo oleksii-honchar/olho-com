@@ -11,17 +11,32 @@
   <link rel="shortcut icon" href="assets/favicons/favicon.ico">
 
   <link href='assets/stylesheets/index.css' rel='stylesheet' />
+  <link
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+    crossorigin="anonymous"
+  >
 
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
   <meta name="msapplication-TileColor" content="#da532c">
   <meta name="msapplication-config" content="assets/favicons/browserconfig.xml">
   <meta name="theme-color" content="#ffffff">
+
+  <script
+    type="text/javascript"
+    src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"
+  ></script>
+  <script crossorigin src="https://unpkg.com/react@16/umd/react.{{NODE_ENV}}.js"></script>
+  <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.{{NODE_ENV}}.js"></script>
+
 </head>
 <body>
   <h1>Welcome to my website</h1>
   <p>Now hosted on Amazon S3!</p>
   <p>Now deployed via CodePipeline!</p>
+  <div id="app-root"></div>
   <script type="text/javascript" src="assets/bundle.js"></script>
 </body>
 </html>

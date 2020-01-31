@@ -10,7 +10,7 @@ const pkg = require('../package.json');
 const moduleCfg = require('./webpack/module.config');
 const baseCfg = require('./webpack/base.config');
 const prodCfg = require('./webpack/prod.config');
-const reactCfg = require('./webpack/react.config');
+const externalsCfg = require('./webpack/externals.config');
 
 console.log(`[config:webpack] "${pkg.name}" config composition started`);
 
@@ -25,7 +25,7 @@ module.exports = (env) => {
   let cfg = baseCfg(env);
 
   cfg = webpackMerge(cfg, moduleCfg);
-  cfg = webpackMerge(cfg, reactCfg);
+  cfg = webpackMerge(cfg, externalsCfg);
 
   if (env.BUILD_ANALYZE === 'true') {
     console.log('[config:webpack] bundle analyzer included');

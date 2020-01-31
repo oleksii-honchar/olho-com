@@ -1,4 +1,4 @@
-export * from './AppConfig'
+export * from './AppConfig';
 
 declare global {
   const PKG_NAME: string;
@@ -7,4 +7,17 @@ declare global {
   interface Window {
     config: object;
   }
+}
+
+// declare module '*.css' {
+//   interface IClassNames {
+//     [className: string]: string
+//   }
+//   const classNames: IClassNames;
+//   export = classNames;
+// }
+
+declare module "*.css" {
+  const content: any;
+  export default content;
 }

@@ -25,6 +25,7 @@
     "paths": {
       "src/*": [ "src/*" ]
     },
+    "plugins": [{ "name": "typescript-plugin-css-modules" }],
     "removeComments": true, // Do not emit comments to output
     "skipLibCheck": false, // Skip type checking of all declaration files (*.d.ts).
     "sourceMap": true,

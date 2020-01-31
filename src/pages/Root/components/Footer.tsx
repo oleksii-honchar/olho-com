@@ -1,5 +1,4 @@
-import * as React from "react";
-import { ReactElement } from "react";
+import React, { ReactElement } from "react";
 import * as moment from "moment";
 
 import { Icon } from "src/components/Icon";

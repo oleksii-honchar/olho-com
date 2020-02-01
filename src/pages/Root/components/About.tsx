@@ -20,12 +20,6 @@ export function About(): ReactElement {
         transform words and ideas in logic and relationships.
       </p>
       <p>I&apos;ll be glad cooperation!</p>
-
-      <h3>What else?</h3>
-      <p>
-        Check my <a href="#">CV</a> and then{" "}
-        <a href="http://telegram.me/tuiteraz">hire me</a> =8)
-      </p>
     </div></div>
   );
 }

@@ -9,42 +9,41 @@ const navCss = css`
   background-image: url('/assets/images/bg-02-flipped.jpg');
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: 50% -140px;
+  background-position: 50% bottom;
   border: none;
 
   &.navbar {
     border-radius: 0px;
   }
 
-  h2 {
-    text-shadow: 0px 2px 2px #333;
+  .white-shadow {
+    text-shadow: #FFF 0px 0px 5px, #FFF 0px 0px 10px, #FFF 0px 0px 15px, #FFF 0px 0px 10px, #FFF 0px 0px 10px, #FFF 0px 0px 10px, #FFF 0px 0px 10px, #FFF 0px 0px 10px, #FFF 0px 0px 10px;
   }
 
-  
   a {
     @include transition(color .2s, border-color .5s)
   }
-  .navbar-brand > img {
-    border: 4px solid white;
-    width: ${avatarDimension}px;
-    height: ${avatarDimension}px;
-    border-radius: ${avatarDimension + 10}px;
-    outline: none;
-  }
-  
+  .avatar {
+    padding: 10px;
+    & > img {
+      border: 4px solid white;
+      width: 100%;
+      height: 100%;
+      border-radius: 100%;
+      outline: none;
+    }
+  }  
 `;
 
 export function NavigationContainer(
   props: InferProps<typeof NavigationContainer.propTypes>
 ): ReactElement {
   return(
-    <nav className="navbar navbar-light bg-light" css={navCss}>
-      <div className="container d-flex justify-content-center">
-        <div className="row col-md-10 col-lg-10">
+      <div className="container-fluid d-flex justify-content-center" css={navCss}>
+        <div className="row w-75">
           {props.children}
         </div>
       </div>
-    </nav>
   )
 }
 

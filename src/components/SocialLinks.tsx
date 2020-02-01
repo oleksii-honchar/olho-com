@@ -1,11 +1,21 @@
 /** @jsx jsx */
-import { jsx } from '@emotion/core'
+import { css, jsx } from '@emotion/core'
 import React, { ReactElement } from "react";
 import { Icon, IconStack } from "src/components/Icon";
 
+const elCss = css`
+  a {
+    color: #4e6983;
+    
+    &:hover {
+      color: #2b445b;
+    }
+  }
+`;
+
 export function SocialLinks(): ReactElement {
   return (
-    <div className="float-right">
+    <div className="float-right" css={elCss}>
       <a href="http://telegram.me/tuiteraz">
         <IconStack size="2x">
           <Icon name="circle"/>

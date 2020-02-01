@@ -1,44 +1,28 @@
+/** @jsx jsx */
+import { css, jsx } from '@emotion/core'
 import React, { ReactElement } from "react";
-// import $ from 'jquery'
 
 import { SocialLinks } from "src/components/SocialLinks";
 import { NavigationContainer } from "src/components/NavigationContainer";
-import { Nav, NavItem, Navbar } from 'react-bootstrap'
-
-// function scrollCheckForNav () {
-//   const navbarMenu = $('[data-class="Navigation"] .navbar-menu')
-//   const navbarNav = $('[data-class="Navigation"] .navbar-nav')
-//
-//   if (document.body.scrollTop > 108) {
-//     navbarMenu.addClass('solid-bg')
-//     navbarNav.addClass('light-links')
-//   } else {
-//     navbarMenu.removeClass('solid-bg')
-//     navbarNav.removeClass('light-links')
-//   }
-// }
 
 export function Navigation(): ReactElement {
-  // componentDidMount () {
-    // scrollCheckForNav()
-    // window.onscroll= scrollCheckForNav
-  // }
 
   return (
     <NavigationContainer>
-      <div className="col align-items-start">
-        <div className='navbar-brand'>
+      <div className="col col-3 d-flex flex-column justify-content-center">
+        <div className='avatar'>
           <img src='/assets/images/userpic-01.jpg' />
         </div>
       </div>
-      <div className="col d-flex flex-column align-items-center">
-        <h2 className="">Oleksii Honchar</h2>
-        <p className="navbar-sub-title justify-content-end">Full-cycle Software Engineer</p>
-        <div className="justify-content-end">
+      <div className="col col-6 d-flex flex-column justify-content-center">
+        <h1 className="align-self-center white-shadow">Oleksii Honchar</h1>
+        <h5 className="align-self-center white-shadow">Full-cycle Software Engineer</h5>
+      </div>
+      <div className="col col3 align-items-end">
+        <div className="align-self-end-end" css={css`padding-top:5px;`}>
           <SocialLinks/>
         </div>
       </div>
-
     </NavigationContainer>
   )
 }

@@ -2,14 +2,17 @@
 import React, { ReactElement } from "react";
 
 import { AppConfigProvider, appConfig } from "src/contexts";
-// @ts-ignore
-import * as styles from "./Root.css";
+import { Navigation } from "src/components/Navigation";
+import { Footer } from "src/components/Footer";
+import { About } from "./components/About";
 
 export function Root(): ReactElement {
   return (
     <AppConfigProvider value={appConfig}>
-      <div>
-        <h1 className={styles.title}>Hello World!</h1>
+      <div className="container">
+        <Navigation/>
+        <About/>
+        <Footer/>
       </div>
     </AppConfigProvider>
   );

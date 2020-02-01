@@ -1,10 +1,8 @@
 import React, { ReactElement } from "react";
 
-import { Footer } from "./Footer";
-
 export function About(): ReactElement {
   return (
-    <div className="container-fluid page-content">
+    <div className="container-fluid">
       <div className="row">
         <div className="col-xs-12 cold-md-12">
           <h1>About</h1>
@@ -33,7 +31,6 @@ export function About(): ReactElement {
           </p>
         </div>
       </div>
-      <Footer />
     </div>
   );
 }

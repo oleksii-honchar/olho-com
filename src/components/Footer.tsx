@@ -1,40 +1,38 @@
+/** @jsx jsx */
+import { jsx } from '@emotion/core'
 import React, { ReactElement } from "react";
 import * as moment from "moment";
 
-import { Icon } from "src/components/Icon";
+import { FooterContainer } from "./Footer.emotion";
+import { Icon, IconStack } from "src/components/Icon";
 
 export function Footer(): ReactElement {
   const socials = (
-    <div className="pull-right">
+    <div className="float-right">
       <a href="http://telegram.me/tuiteraz">
-        <span className="fa-stack fa-lg">
-          <i className="fa fa-circle fa-stack-2x" />
-          <i className="fa fa-paper-plane fa-stack-1x fa-inverse" />
-        </span>
+        <IconStack size="2x">
+          <Icon name="circle"/>
+          <Icon name="paper-plane" color="white" transform="shrink-6"/>
+        </IconStack>
       </a>
       <a href="https://fb.com/gonchara.net">
-        <span className="fa-stack fa-lg">
-          <i className="fa fa-circle fa-stack-2x" />
-          <i className="fa fa-facebook fa-stack-1x fa-inverse" />
-        </span>
+          <i className="fab fa-facebook"></i>
+          <Icon brand name="facebook" size="2x"/>
       </a>
       <a href="https://ua.linkedin.com/in/alekseygonchar">
-        <span className="fa-stack fa-lg">
-          <i className="fa fa-circle fa-stack-2x" />
-          <i className="fa fa-linkedin fa-stack-1x fa-inverse" />
-        </span>
+        <IconStack size="2x">
+          <Icon name="circle" />
+          <Icon brand name="linkedin" color="white" transform="shrink-6"/>
+        </IconStack>
       </a>
       <a href="https://github.com/aleksey-gonchar">
-        <span className="fa-stack fa-lg">
-          <i className="fa fa-circle fa-stack-2x" />
-          <i className="fa fa-github-alt fa-stack-1x fa-inverse" />
-        </span>
+        <Icon brand name="github" size="2x"/>
       </a>
     </div>
   );
 
   return (
-    <div className="row" data-class="Footer">
+    <FooterContainer className="row" >
       <div className="col-xs-12 col-md-12">
         <table>
           <tbody>
@@ -54,6 +52,6 @@ export function Footer(): ReactElement {
           </tbody>
         </table>
       </div>
-    </div>
+    </FooterContainer>
   );
 }

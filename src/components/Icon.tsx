@@ -1,35 +1,43 @@
 import React, { ReactElement } from "react";
 import PropTypes, { InferProps } from "prop-types";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
-  IconName, SizeProp, FlipProp, RotateProp,
+  SizeProp,
+  FlipProp,
+  RotateProp,
+  library,
+  IconName,
   IconDefinition,
   findIconDefinition
-} from '@fortawesome/fontawesome-svg-core';
-import { library } from '@fortawesome/fontawesome-svg-core';
-import { faPaperPlane, faCopyright, faCircle } from '@fortawesome/free-solid-svg-icons';
-import { faFacebook, faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
+} from "@fortawesome/fontawesome-svg-core";
 
-library.add(faPaperPlane, faCopyright, faFacebook, faLinkedin, faGithub);
+import {
+  faPaperPlane,
+  faCopyright,
+  faCircle
+} from "@fortawesome/free-solid-svg-icons";
+import {
+  faFacebook,
+  faLinkedin,
+  faGithub
+} from "@fortawesome/free-brands-svg-icons";
 
-const iconDefinitions = {
-  'paper-plane': faPaperPlane,
-  'copyright': faCopyright,
-  'facebook': faFacebook,
-  'linkedin': faLinkedin,
-  'github': faGithub,
-  'circle': faCircle
-}
+library.add(
+  faPaperPlane,
+  faCopyright,
+  faFacebook,
+  faLinkedin,
+  faGithub,
+  faCircle
+);
 
-export function IconStack(props: InferProps<typeof IconStack.propTypes>): ReactElement {
+export function IconStack(
+  props: InferProps<typeof IconStack.propTypes>
+): ReactElement {
   let className = `fa-layers fa-fw`;
   className += props.size ? ` fa-${props.size}` : "";
 
-  return (
-    <span className={className}>
-      {props.children}
-    </span>
-  );
+  return <span className={className}>{props.children}</span>;
 }
 
 IconStack.propTypes = {
@@ -41,16 +49,23 @@ IconStack.propTypes = {
 };
 
 export function Icon(props: InferProps<typeof Icon.propTypes>): ReactElement {
-  return <FontAwesomeIcon
-    color={props.color as string}
-    flip={props.flip as FlipProp}
-    icon={iconDefinitions[props.name]}
-    inverse={!!props.inverse}
-    rotation={props.rotation as RotateProp}
-    size={props.size as SizeProp}
-    spin={!!props.spin}
-    transform={props.transform as string}
-  />;
+  const iconDefinition: IconDefinition = findIconDefinition({
+    prefix: props.brand ? "fab" : "fas",
+    iconName: props.name as IconName
+  });
+
+  return (
+    <FontAwesomeIcon
+      color={props.color as string}
+      flip={props.flip as FlipProp}
+      icon={iconDefinition}
+      inverse={!!props.inverse}
+      rotation={props.rotation as RotateProp}
+      size={props.size as SizeProp}
+      spin={!!props.spin}
+      transform={props.transform as string}
+    />
+  );
 }
 
 Icon.propTypes = {
@@ -63,7 +78,7 @@ Icon.propTypes = {
   rotation: PropTypes.oneOf([90, 180, 270]),
   spin: PropTypes.bool,
   size: PropTypes.string,
-  transform: PropTypes.string,
+  transform: PropTypes.string
 };
 
 Icon.defaultProps = {

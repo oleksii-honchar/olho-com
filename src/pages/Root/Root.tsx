@@ -8,10 +8,10 @@ import { About } from "./components/About";
 export function Root(): ReactElement {
   return (
     <AppConfigProvider value={appConfig}>
-      <Navigation/>
+      <Navigation />
       <div className="container">
-        <About/>
-        <Footer/>
+        <About />
+        <Footer />
       </div>
     </AppConfigProvider>
   );

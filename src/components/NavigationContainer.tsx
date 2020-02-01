@@ -1,12 +1,12 @@
 /** @jsx jsx */
-import { css, jsx } from '@emotion/core'
+import { css, jsx } from "@emotion/core";
 import React, { ReactElement } from "react";
 import PropTypes, { InferProps } from "prop-types";
 
 const avatarDimension = 200;
 
 const navCss = css`
-  background-image: url('/assets/images/bg-02-flipped.jpg');
+  background-image: url("/assets/images/bg-02-flipped.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50% bottom;
@@ -17,11 +17,13 @@ const navCss = css`
   }
 
   .white-shadow {
-    text-shadow: #FFF 0px 0px 5px, #FFF 0px 0px 10px, #FFF 0px 0px 15px, #FFF 0px 0px 10px, #FFF 0px 0px 10px, #FFF 0px 0px 10px, #FFF 0px 0px 10px, #FFF 0px 0px 10px, #FFF 0px 0px 10px;
+    text-shadow: #fff 0px 0px 5px, #fff 0px 0px 10px, #fff 0px 0px 15px,
+      #fff 0px 0px 10px, #fff 0px 0px 10px, #fff 0px 0px 10px, #fff 0px 0px 10px,
+      #fff 0px 0px 10px, #fff 0px 0px 10px;
   }
 
   a {
-    @include transition(color .2s, border-color .5s)
+    @include transition(color 0.2s, border-color 0.5s);
   }
   .avatar {
     padding: 10px;
@@ -32,19 +34,17 @@ const navCss = css`
       border-radius: 100%;
       outline: none;
     }
-  }  
+  }
 `;
 
 export function NavigationContainer(
   props: InferProps<typeof NavigationContainer.propTypes>
 ): ReactElement {
-  return(
-      <div className="container-fluid d-flex justify-content-center" css={navCss}>
-        <div className="row w-75">
-          {props.children}
-        </div>
-      </div>
-  )
+  return (
+    <div className="container-fluid d-flex justify-content-center" css={navCss}>
+      <div className="row w-75">{props.children}</div>
+    </div>
+  );
 }
 
 NavigationContainer.propTypes = {

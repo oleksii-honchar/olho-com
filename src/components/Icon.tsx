@@ -7,11 +7,19 @@ import {
   findIconDefinition
 } from '@fortawesome/fontawesome-svg-core';
 import { library } from '@fortawesome/fontawesome-svg-core';
-import { fas } from '@fortawesome/free-solid-svg-icons';
-import { fab } from '@fortawesome/free-brands-svg-icons';
+import { faPaperPlane, faCopyright, faCircle } from '@fortawesome/free-solid-svg-icons';
+import { faFacebook, faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
 
-library.add(fas)
-library.add(fab)
+library.add(faPaperPlane, faCopyright, faFacebook, faLinkedin, faGithub);
+
+const iconDefinitions = {
+  'paper-plane': faPaperPlane,
+  'copyright': faCopyright,
+  'facebook': faFacebook,
+  'linkedin': faLinkedin,
+  'github': faGithub,
+  'circle': faCircle
+}
 
 export function IconStack(props: InferProps<typeof IconStack.propTypes>): ReactElement {
   let className = `fa-layers fa-fw`;
@@ -33,15 +41,10 @@ IconStack.propTypes = {
 };
 
 export function Icon(props: InferProps<typeof Icon.propTypes>): ReactElement {
-  const iconDefinition: IconDefinition = findIconDefinition( {
-    prefix: props.brand? 'fab': 'fas',
-    iconName: props.name as IconName
-  })
-
   return <FontAwesomeIcon
     color={props.color as string}
     flip={props.flip as FlipProp}
-    icon={iconDefinition}
+    icon={iconDefinitions[props.name]}
     inverse={!!props.inverse}
     rotation={props.rotation as RotateProp}
     size={props.size as SizeProp}

@@ -11,7 +11,7 @@ export function Navigation(): ReactElement {
     <NavigationContainer>
       <div className="col col-3 d-flex flex-column justify-content-center">
         <div className='avatar'>
-          <img src='/assets/images/userpic-01.jpg' />
+          <img src='/assets/images/userpic-02.jpg' />
         </div>
       </div>
       <div className="col col-6 d-flex flex-column justify-content-center">

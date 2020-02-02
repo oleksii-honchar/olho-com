@@ -11,6 +11,8 @@ const elCss = css`
       color: #2b445b;
     }
   }
+
+  font-size: 1rem;
 `;
 
 export function SocialLinks(): ReactElement {

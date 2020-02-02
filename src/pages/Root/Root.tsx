@@ -4,6 +4,7 @@ import { AppConfigProvider, appConfig } from "src/contexts";
 import { Navigation } from "src/components/Navigation";
 import { Footer } from "src/components/Footer";
 import { About } from "./components/About";
+import { HardSkills } from "./components/HardSkills";
 
 export function Root(): ReactElement {
   return (
@@ -11,6 +12,7 @@ export function Root(): ReactElement {
       <Navigation />
       <div className="container">
         <About />
+        <HardSkills />
         <Footer />
       </div>
     </AppConfigProvider>

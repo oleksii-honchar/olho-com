@@ -18,7 +18,7 @@ export function Footer(): ReactElement {
 
   return (
     <div className="row justify-content-center">
-      <div className="col col-md-10 col-lg-10" css={elCss}>
+      <div className="col col-md-12 col-lg-12" css={elCss}>
         <table>
           <tbody>
             <tr>

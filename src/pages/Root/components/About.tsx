@@ -3,7 +3,7 @@ import React, { ReactElement } from "react";
 export function About(): ReactElement {
   return (
     <div className="row justify-content-center">
-      <div className="col col-md-10 col-lg-10">
+      <div className="col col-md-12 col-lg-12">
         <h1>About</h1>
         <p>
           Hello! My name is Alex. I’m a professional full-circle software

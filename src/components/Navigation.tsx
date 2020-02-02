@@ -14,8 +14,20 @@ export function Navigation(): ReactElement {
         </div>
       </div>
       <div className="col col-6 d-flex flex-column justify-content-center">
-        <h1 className="align-self-center white-shadow">Oleksii Honchar</h1>
-        <h5 className="align-self-center white-shadow">
+        <h1
+          className="align-self-center white-shadow"
+          css={css`
+            font-size: 4rem;
+          `}
+        >
+          Oleksii Honchar
+        </h1>
+        <h5
+          className="align-self-center white-shadow"
+          css={css`
+            font-size: 1.5rem;
+          `}
+        >
           Full-cycle Software Engineer
         </h5>
       </div>

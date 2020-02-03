@@ -1,21 +1,24 @@
 /** @jsx jsx */
 import { css, jsx } from "@emotion/core";
 import React, { ReactElement } from "react";
+import { useTheme } from 'emotion-theming'
+
 import { Icon, IconStack } from "src/components/Icon";
 
-const elCss = css`
-  a {
-    color: #4e6983;
-
-    &:hover {
-      color: #2b445b;
-    }
-  }
-
-  font-size: 1rem;
-`;
-
 export function SocialLinks(): ReactElement {
+  const theme: any = useTheme();
+  const elCss = css`
+    a {
+      color: ${theme.colors.link.default};
+  
+      &:hover {
+        color: ${theme.colors.link.hover};
+      }
+    }
+  
+    font-size: 1rem;
+  `;
+
   return (
     <div className="float-right" css={elCss}>
       <a href="http://telegram.me/tuiteraz">
@@ -44,4 +47,5 @@ export function SocialLinks(): ReactElement {
       </a>
     </div>
   );
-}
+};
+

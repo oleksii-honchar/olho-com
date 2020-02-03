@@ -69,10 +69,9 @@ export function HardSkills(): ReactElement {
               </ul>
             </td>
           </tr>
-        </tbody>
-      </table>
-      <table className="table">
-        <tbody>
+          <tr>
+            <td>&nbsp;</td>
+          </tr>
           <tr>
             <td css={colorColCss}></td>
             <td>
@@ -107,6 +106,11 @@ export function HardSkills(): ReactElement {
                 </li>
               </ul>
             </td>
+            <td
+              css={css`
+                width: 20px;
+              `}
+            ></td>
             <td>
               <ul>
                 <li>

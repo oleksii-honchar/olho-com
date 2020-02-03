@@ -10,7 +10,7 @@
     "build:loc": "bash scripts/build.loc.sh",
     "build:loc:analyze": "cross-env-shell BUILD_ANALYZE=true bash ./scripts/build.loc.sh",
     "cm": "npx git-cz",
-    "check:all": "run-p lint types:check",
+    "check:all": "run-p lint:fix types:check",
     "clean:dist": "rm -rf dist/static",
     "launch:loc": "run-p launch:dev-server types:watch",
     "launch:dev-server": "bash ./scripts/launch.dev-server.sh",

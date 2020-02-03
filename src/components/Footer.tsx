@@ -17,28 +17,26 @@ export function Footer(): ReactElement {
   `;
 
   return (
-    <div className="row justify-content-center">
-      <div className="col col-md-12 col-lg-12" css={elCss}>
-        <table>
-          <tbody>
-            <tr>
-              <td>
-                <Icon name="copyright" />
-                &nbsp;
-                {moment().format("YYYY")}&nbsp;
-                <span className="name">Oleksii Honchar</span>
-                <span className="sub-title">
-                  &nbsp;- Full-cycle Software Engineer
-                </span>
-              </td>
+    <div css={elCss}>
+      <table>
+        <tbody>
+          <tr>
+            <td>
+              <Icon name="copyright" />
+              &nbsp;
+              {moment().format("YYYY")}&nbsp;
+              <span className="name">Oleksii Honchar</span>
+              <span className="sub-title">
+                &nbsp;- Full-cycle Software Engineer
+              </span>
+            </td>
 
-              <td>
-                <SocialLinks />
-              </td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
+            <td>
+              <SocialLinks />
+            </td>
+          </tr>
+        </tbody>
+      </table>
     </div>
   );
 }

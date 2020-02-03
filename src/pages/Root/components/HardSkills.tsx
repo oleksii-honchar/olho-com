@@ -65,7 +65,7 @@ export function HardSkills(): ReactElement {
           <tr>
             <CellSpacer />
             <td>
-              <div className="d-flex">
+              <div className="d-flex align-items-center">
                 <h3 className="">Technological experience</h3>&nbsp;
                 <span className="alight-self-start badge badge-info">
                   1.2020

@@ -41,7 +41,7 @@ export function StyleThemeProvider(
         spacerBackground: "lightgrey"
       },
       experience: {
-        spacerBackground: "#ffe599"
+        spacerBackground: "#70bd7c"
       }
     }
   };

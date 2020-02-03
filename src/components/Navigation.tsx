@@ -19,50 +19,52 @@ export function Navigation(): ReactElement {
       className="navbar navbar-expand-lg navbar-dark bg-dark sticky-top"
       css={navCss}
     >
-      <div className="container">
-        <a className="navbar-brand" href="#">
-          <img
-            src="/assets/images/maze.png"
-            width="30"
-            height="30"
-            className="d-inline-block align-top"
-            alt=""
-          />
-        </a>
-        <button
-          className="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbarText"
-          aria-controls="navbarText"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span className="navbar-toggler-icon"></span>
-        </button>
-        <div
-          className="collapse navbar-collapse d-flex justify-content-between"
-          id="navbarNavAltMarkup"
-        >
-          <div className="navbar-nav">
-            <a className="nav-item nav-link active" href="#about">
-              About <span className="sr-only">(current)</span>
-            </a>
-            <a className="nav-item nav-link" href="#hard-skills">
-              Hard skills
-            </a>
-            <a className="nav-item nav-link" href="#soft-skills">
-              Soft skills
-            </a>
-            <a className="nav-item nav-link" href="#education">
-              Education
-            </a>
-            <a className="nav-item nav-link" href="#experience">
-              Experience
-            </a>
+      <div className="container-fluid d-flex justify-content-between">
+        <div className="d-flex">
+          <a className="navbar-brand" href="#">
+            <img
+              src="/assets/images/maze.png"
+              width="30"
+              height="30"
+              className="d-inline-block align-top"
+              alt=""
+            />
+          </a>
+          <button
+            className="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarText"
+            aria-controls="navbarText"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span className="navbar-toggler-icon"></span>
+          </button>
+          <div
+            className="collapse navbar-collapse d-flex justify-content-between"
+            id="navbarNavAltMarkup"
+          >
+            <div className="navbar-nav">
+              <a className="nav-item nav-link active" href="#about">
+                About <span className="sr-only">(current)</span>
+              </a>
+              <a className="nav-item nav-link" href="#hard-skills">
+                Hard skills
+              </a>
+              <a className="nav-item nav-link" href="#soft-skills">
+                Soft skills
+              </a>
+              <a className="nav-item nav-link" href="#education">
+                Education
+              </a>
+              <a className="nav-item nav-link" href="#experience">
+                Experience
+              </a>
+            </div>
           </div>
-          <SocialLinks />
         </div>
+        <SocialLinks />
       </div>
     </nav>
   );

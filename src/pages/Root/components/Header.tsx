@@ -11,7 +11,7 @@ export function Header(): ReactElement {
     border: none;
 
     .col {
-      min-height: 220px;
+      min-height: 260px;
     }
 
     .white-shadow {
@@ -39,7 +39,7 @@ export function Header(): ReactElement {
 
   return (
     <div className="row justify-content-center" css={headerCss}>
-      <div className="col col-md-10 col-lg-10 d-flex">
+      <div className="col col-md-9 col-lg-9 d-flex align-items-center">
         <div className="avatar">
           <img src="/assets/images/userpic-02.jpg" />
         </div>

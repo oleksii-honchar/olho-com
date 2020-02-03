@@ -4,7 +4,7 @@ import React, { ReactElement, Fragment } from "react";
 
 export function About(): ReactElement {
   return (
-    <Fragment>
+    <section id="about">
       <h1
         css={css`
           padding-top: 10px;
@@ -33,6 +33,6 @@ export function About(): ReactElement {
         would like to notice high personal standards and attention to details.
       </p>
       <p>I&apos;ll be glad cooperation!</p>
-    </Fragment>
+    </section>
   );
 }

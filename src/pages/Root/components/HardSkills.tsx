@@ -24,7 +24,7 @@ export function HardSkills(): ReactElement {
   `;
 
   return (
-    <div css={hardSkillsCss}>
+    <section css={hardSkillsCss} id="hard-skills">
       <h1>Hard skills</h1>
       <table className="table">
         <tbody>
@@ -134,6 +134,6 @@ export function HardSkills(): ReactElement {
           </tr>
         </tbody>
       </table>
-    </div>
+    </section>
   );
 }

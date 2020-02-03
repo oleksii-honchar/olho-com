@@ -1,1 +1,9 @@
 @import "reset.css";
+
+section[id]:before {
+    display: block;
+    height: 65px;
+    margin-top: -65px;
+    visibility: hidden;
+    content: "";
+}

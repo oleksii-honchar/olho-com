@@ -1,40 +1,29 @@
 /** @jsx jsx */
 import { css, jsx } from "@emotion/core";
-import styled from "@emotion/styled";
 import React, { ReactElement, Fragment } from "react";
+import { useTheme } from 'emotion-theming'
 
 import { YearsBadge } from "src/components/YearsBadge";
+import {TableSpacer} from "src/components/TableSpacer"
 
 export function HardSkills(): ReactElement {
-  const colorColCss = css`
-    width: 20px;
-    background: antiquewhite;
-  `;
-
-  const hardSkillsCss = css`
-    table,
-    tr,
-    td {
-      border: none;
-    }
-  `;
+  const theme: any = useTheme();
 
   const rustyColorCss = css`
     color: darkgray;
   `;
 
+  const CellSpacer = (): ReactElement =>
+    <TableSpacer color={theme.colors.sections.hardSkills.spacerBackground}/>;
+
   return (
-    <section css={hardSkillsCss} id="hard-skills">
+    <section id="hard-skills">
       <h1>Hard skills</h1>
       <table className="table">
         <tbody>
           <tr>
-            <td css={colorColCss}></td>
-            <td
-              css={css`
-                width: 50%;
-              `}
-            >
+            <CellSpacer />
+            <td>
               <h3>Frontend</h3>
               <ul>
                 <li>JavaScript / TypesScript</li>
@@ -49,7 +38,7 @@ export function HardSkills(): ReactElement {
                 <li>Node.js, Express.js, WebSocket, Socket.io, Ruby</li>
               </ul>
             </td>
-            <td css={colorColCss}></td>
+            <CellSpacer/>
             <td>
               <h3>Database</h3>
               <ul>
@@ -73,23 +62,18 @@ export function HardSkills(): ReactElement {
             <td>&nbsp;</td>
           </tr>
           <tr>
-            <td css={colorColCss}></td>
+            <CellSpacer/>
             <td>
               <div className="d-flex">
                 <h3 className="">Technological experience</h3>&nbsp;
-                <span
-                  className="alight-self-start badge badge-info"
-                  css={css`
-                    height: 75%;
-                  `}
-                >
+                <span className="alight-self-start badge badge-info">
                   1.2020
                 </span>
               </div>
             </td>
           </tr>
           <tr>
-            <td css={colorColCss}></td>
+            <CellSpacer/>
             <td>
               <ul>
                 <li>
@@ -108,7 +92,7 @@ export function HardSkills(): ReactElement {
             </td>
             <td
               css={css`
-                width: 20px;
+                width: ${theme.sizes.tableSpacerWidth};
               `}
             ></td>
             <td>

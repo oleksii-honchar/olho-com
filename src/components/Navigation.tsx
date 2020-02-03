@@ -2,7 +2,7 @@
 import { css, jsx } from "@emotion/core";
 import React, { ReactElement } from "react";
 import { useTheme } from 'emotion-theming'
-import {SocialLinks} from "src/components/SocialLinks"
+import { SocialLinks } from "src/components/SocialLinks"
 
 export function Navigation(): ReactElement {
   const theme: any = useTheme();
@@ -44,9 +44,9 @@ export function Navigation(): ReactElement {
               About <span className="sr-only">(current)</span>
             </a>
             <a className="nav-item nav-link" href="#hard-skills">Hard skills</a>
-            <a className="nav-item nav-link" href="#">Soft skills</a>
-            <a className="nav-item nav-link" href="#">Education</a>
-            <a className="nav-item nav-link" href="#">Experience</a>
+            <a className="nav-item nav-link" href="#soft-skills">Soft skills</a>
+            <a className="nav-item nav-link" href="#education">Education</a>
+            <a className="nav-item nav-link" href="#experience">Experience</a>
           </div>
           <SocialLinks/>
         </div>

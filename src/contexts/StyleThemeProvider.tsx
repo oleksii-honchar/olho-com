@@ -17,17 +17,38 @@ export function StyleThemeProvider(
     }
   };
 
-  const theme = {
-    colorSystem,
-    colors: {
-      link: {
-        default: colorSystem.primary.light,
-        hover: colorSystem.primary.main
+  const sizes = {
+    tableSpacerWidth: '30px'
+  };
+
+  const colors = {
+    link: {
+      default: colorSystem.primary.light,
+      hover: colorSystem.primary.main
+    },
+    navbar: {
+      backgroundColor: Color(colorSystem.primary.dark).darken(.3).string()
+    },
+    sections: {
+      hardSkills: {
+        spacerBackground: 'antiquewhite'
       },
-      navbar: {
-        backgroundColor: Color(colorSystem.primary.dark).darken(.3).string()
+      softSkills: {
+        spacerBackground: '#ffe599'
+      },
+      education: {
+        spacerBackground: '#ffe599'
+      },
+      experience: {
+        spacerBackground: '#ffe599'
       }
     }
+  };
+
+  const theme: any = {
+    colorSystem,
+    sizes,
+    colors
   };
 
   return <ThemeProvider theme={theme}>{props.children}</ThemeProvider>;

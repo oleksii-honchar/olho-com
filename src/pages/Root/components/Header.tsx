@@ -9,17 +9,17 @@ export function Header(): ReactElement {
     background-size: cover;
     background-position: 50% bottom;
     border: none;
-  
+
     .col {
       min-height: 220px;
     }
-  
+
     .white-shadow {
       text-shadow: #fff 0px 0px 5px, #fff 0px 0px 10px, #fff 0px 0px 15px,
-        #fff 0px 0px 10px, #fff 0px 0px 10px, #fff 0px 0px 10px, #fff 0px 0px 10px,
-        #fff 0px 0px 10px, #fff 0px 0px 10px;
+        #fff 0px 0px 10px, #fff 0px 0px 10px, #fff 0px 0px 10px,
+        #fff 0px 0px 10px, #fff 0px 0px 10px, #fff 0px 0px 10px;
     }
-  
+
     a {
       @include transition(color 0.2s, border-color 0.5s);
     }

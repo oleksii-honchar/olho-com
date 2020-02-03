@@ -1,8 +1,8 @@
 /** @jsx jsx */
 import { css, jsx } from "@emotion/core";
 import React, { ReactElement } from "react";
-import { useTheme } from 'emotion-theming'
-import { SocialLinks } from "src/components/SocialLinks"
+import { useTheme } from "emotion-theming";
+import { SocialLinks } from "src/components/SocialLinks";
 
 export function Navigation(): ReactElement {
   const theme: any = useTheme();
@@ -34,21 +34,34 @@ export function Navigation(): ReactElement {
           type="button"
           data-toggle="collapse"
           data-target="#navbarText"
-          aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation"
+          aria-controls="navbarText"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
         >
           <span className="navbar-toggler-icon"></span>
         </button>
-        <div className="collapse navbar-collapse d-flex justify-content-between" id="navbarNavAltMarkup">
+        <div
+          className="collapse navbar-collapse d-flex justify-content-between"
+          id="navbarNavAltMarkup"
+        >
           <div className="navbar-nav">
             <a className="nav-item nav-link active" href="#about">
               About <span className="sr-only">(current)</span>
             </a>
-            <a className="nav-item nav-link" href="#hard-skills">Hard skills</a>
-            <a className="nav-item nav-link" href="#soft-skills">Soft skills</a>
-            <a className="nav-item nav-link" href="#education">Education</a>
-            <a className="nav-item nav-link" href="#experience">Experience</a>
+            <a className="nav-item nav-link" href="#hard-skills">
+              Hard skills
+            </a>
+            <a className="nav-item nav-link" href="#soft-skills">
+              Soft skills
+            </a>
+            <a className="nav-item nav-link" href="#education">
+              Education
+            </a>
+            <a className="nav-item nav-link" href="#experience">
+              Experience
+            </a>
           </div>
-          <SocialLinks/>
+          <SocialLinks />
         </div>
       </div>
     </nav>

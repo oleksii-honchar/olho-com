@@ -3,22 +3,21 @@ import { css, jsx } from "@emotion/core";
 import React, { ReactElement } from "react";
 import PropTypes, { InferProps } from "prop-types";
 import { ThemeProvider } from "emotion-theming";
-import Color from 'color';
+import Color from "color";
 
 export function StyleThemeProvider(
   props: InferProps<typeof StyleThemeProvider.propTypes>
 ): ReactElement {
-
   const colorSystem = {
     primary: {
-      main: '#38567b',
-      dark: '#022d4f',
-      light: '#6682aa',
+      main: "#38567b",
+      dark: "#022d4f",
+      light: "#6682aa"
     }
   };
 
   const sizes = {
-    tableSpacerWidth: '30px'
+    tableSpacerWidth: "30px"
   };
 
   const colors = {
@@ -27,20 +26,22 @@ export function StyleThemeProvider(
       hover: colorSystem.primary.main
     },
     navbar: {
-      backgroundColor: Color(colorSystem.primary.dark).darken(.3).string()
+      backgroundColor: Color(colorSystem.primary.dark)
+        .darken(0.3)
+        .string()
     },
     sections: {
       hardSkills: {
-        spacerBackground: 'antiquewhite'
+        spacerBackground: "antiquewhite"
       },
       softSkills: {
-        spacerBackground: '#ffe599'
+        spacerBackground: "#ffe599"
       },
       education: {
-        spacerBackground: '#ffe599'
+        spacerBackground: "lightgrey"
       },
       experience: {
-        spacerBackground: '#ffe599'
+        spacerBackground: "#ffe599"
       }
     }
   };

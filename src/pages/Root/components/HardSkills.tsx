@@ -1,10 +1,10 @@
 /** @jsx jsx */
 import { css, jsx } from "@emotion/core";
 import React, { ReactElement, Fragment } from "react";
-import { useTheme } from 'emotion-theming'
+import { useTheme } from "emotion-theming";
 
 import { YearsBadge } from "src/components/YearsBadge";
-import {TableSpacer} from "src/components/TableSpacer"
+import { TableSpacer } from "src/components/TableSpacer";
 
 export function HardSkills(): ReactElement {
   const theme: any = useTheme();
@@ -13,8 +13,9 @@ export function HardSkills(): ReactElement {
     color: darkgray;
   `;
 
-  const CellSpacer = (): ReactElement =>
-    <TableSpacer color={theme.colors.sections.hardSkills.spacerBackground}/>;
+  const CellSpacer = (): ReactElement => (
+    <TableSpacer color={theme.colors.sections.hardSkills.spacerBackground} />
+  );
 
   return (
     <section id="hard-skills">
@@ -38,7 +39,7 @@ export function HardSkills(): ReactElement {
                 <li>Node.js, Express.js, WebSocket, Socket.io, Ruby</li>
               </ul>
             </td>
-            <CellSpacer/>
+            <CellSpacer />
             <td>
               <h3>Database</h3>
               <ul>
@@ -62,7 +63,7 @@ export function HardSkills(): ReactElement {
             <td>&nbsp;</td>
           </tr>
           <tr>
-            <CellSpacer/>
+            <CellSpacer />
             <td>
               <div className="d-flex">
                 <h3 className="">Technological experience</h3>&nbsp;
@@ -73,7 +74,7 @@ export function HardSkills(): ReactElement {
             </td>
           </tr>
           <tr>
-            <CellSpacer/>
+            <CellSpacer />
             <td>
               <ul>
                 <li>

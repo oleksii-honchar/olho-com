@@ -1,19 +1,15 @@
 /** @jsx jsx */
 import { css, jsx } from "@emotion/core";
 import React, { ReactElement, Fragment } from "react";
-import {TableSpacer} from "src/components/TableSpacer";
-import { useTheme } from 'emotion-theming';
+import { TableSpacer } from "src/components/TableSpacer";
+import { useTheme } from "emotion-theming";
 
 export function SoftSkills(): ReactElement {
   const theme: any = useTheme();
 
-  const CellSpacer = (): ReactElement =>
-    <TableSpacer color={theme.colors.sections.softSkills.spacerBackground}/>;
-
-  const colorColCss = css`
-    width: 20px;
-    background: antiquewhite;
-  `;
+  const CellSpacer = (): ReactElement => (
+    <TableSpacer color={theme.colors.sections.softSkills.spacerBackground} />
+  );
 
   return (
     <section id="soft-skills">
@@ -21,17 +17,28 @@ export function SoftSkills(): ReactElement {
       <table className="table">
         <tbody>
           <tr>
-            <CellSpacer/>
+            <CellSpacer />
             <td>
               <h3>Strengths</h3>
               <ul>
-                <li><strong>Catalyst</strong> - my objective is to act and to initiate action</li>
-                <li><strong>Coach</strong> - power to enable people’s potential</li>
-                <li><strong>Deliverer</strong> - take responsibility, strong emotional bound to all promises</li>
+                <li>
+                  <strong>Catalyst</strong> - my objective is to act and to
+                  initiate action
+                </li>
+                <li>
+                  <strong>Coach</strong> - power to enable people’s potential
+                </li>
+                <li>
+                  <strong>Deliverer</strong> - take responsibility, strong
+                  emotional bound to all promises
+                </li>
               </ul>
               <h3>Interests</h3>
               <ul>
-                <li>Hiking, sports, eastern philosophy, music, design, literature, functional training</li>
+                <li>
+                  Hiking, sports, eastern philosophy, music, design, literature,
+                  functional training
+                </li>
               </ul>
             </td>
           </tr>

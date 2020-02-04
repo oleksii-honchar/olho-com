@@ -73,7 +73,7 @@ export function Header(): ReactElement {
       }
 
       @media screen and (min-device-width: 1200px) {
-        font-size: 4rem;
+        font-size: 3.6rem;
       }
     }
     .full-title {

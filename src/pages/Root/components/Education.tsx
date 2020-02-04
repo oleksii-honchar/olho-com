@@ -41,13 +41,10 @@ export function Education(): ReactElement {
               </dl>
             </td>
           </tr>
-          <tr>
-            <td
-              css={css`
-                height: 2px;
-              `}
-            ></td>
-          </tr>
+        </tbody>
+      </table>
+      <table className="table">
+        <tbody>
           <tr>
             <CellSpacer />
             <td>1993 - 1996</td>

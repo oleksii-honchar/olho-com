@@ -21,17 +21,16 @@ export function Footer(): ReactElement {
       <table>
         <tbody>
           <tr>
-            <td>
-              <Icon name="copyright" />
-              &nbsp;
-              {moment().format("YYYY")}&nbsp;
-              <span className="name">Oleksii Honchar</span>
-              <span className="sub-title">
-                &nbsp;- Full-cycle Software Engineer
-              </span>
-            </td>
-
-            <td>
+            <td className="d-flex justify-content-between">
+              <div>
+                <Icon name="copyright" />
+                &nbsp;
+                {moment().format("YYYY")}&nbsp;
+                <span className="name">Oleksii Honchar</span>
+                <span className="sub-title">
+                  &nbsp;- Full-cycle Software Engineer
+                </span>
+              </div>
               <SocialLinks />
             </td>
           </tr>

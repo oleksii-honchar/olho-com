@@ -14,7 +14,7 @@ export function TableSpacer(
         background: ${props.color};
         padding: 0 !important;
         @media screen and (min-device-width: 376px) and (max-device-width: 768px) {
-          width: 10px;
+          width: ${theme.sizes.tableSpacerWidthSmall};
         }
 
         @media screen and (min-device-width: 768px) {
@@ -27,4 +27,8 @@ export function TableSpacer(
 
 TableSpacer.propTypes = {
   color: PropTypes.string
+};
+
+TableSpacer.defaultProps = {
+  color: 'none'
 };

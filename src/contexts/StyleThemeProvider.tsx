@@ -17,7 +17,8 @@ export function StyleThemeProvider(
   };
 
   const sizes = {
-    tableSpacerWidth: "30px"
+    tableSpacerWidth: "20px",
+    tableSpacerWidthSmall: "10px"
   };
 
   const colors = {

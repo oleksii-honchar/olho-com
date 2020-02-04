@@ -20,7 +20,7 @@ export function SocialLinks(): ReactElement {
   `;
 
   return (
-    <div className="float-right" css={elCss}>
+    <div css={elCss}>
       <a href="http://telegram.me/tuiteraz">
         <IconStack size="2x">
           <Icon name="circle" />

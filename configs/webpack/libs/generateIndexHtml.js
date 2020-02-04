@@ -4,7 +4,9 @@ const hbs = require('handlebars');
 
 function generateIndexHtml (env) {
   const data = {
-    NODE_ENV: process.env.NODE_ENV
+    scriptEnvSuffix: process.env.NODE_ENV === 'development'
+      ? 'development'
+      : 'production.min'
   };
 
   const tmplPath = path.join(__dirname, '../../../src/assets/index.hbs');

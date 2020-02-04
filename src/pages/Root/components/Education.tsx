@@ -16,7 +16,7 @@ export function Education(): ReactElement {
       <h1>Education</h1>
       <table className="table">
         <tbody>
-          <tr>
+          <tr className="d-flex">
             <CellSpacer />
             <td>1996 - 2001</td>
             <td>
@@ -45,7 +45,7 @@ export function Education(): ReactElement {
       </table>
       <table className="table">
         <tbody>
-          <tr>
+          <tr className="d-flex">
             <CellSpacer />
             <td>1993 - 1996</td>
             <td>

@@ -8,20 +8,32 @@ export function TableSpacer(
   props: InferProps<typeof TableSpacer.propTypes>
 ): ReactElement {
   const theme: any = useTheme();
+  const sizeCss = css`
+    @media screen and (min-device-width: 376px) and (max-device-width: 768px) {
+      width: ${theme.sizes.tableSpacerWidthSmall};
+    }
+
+    @media screen and (min-device-width: 768px) {
+      width: ${theme.sizes.tableSpacerWidth};
+    }
+  `;
+
   return (
     <td
+      className="d-flex align-items-stretch"
       css={css`
-        background: ${props.color};
         padding: 0 !important;
-        @media screen and (min-device-width: 376px) and (max-device-width: 768px) {
-          width: ${theme.sizes.tableSpacerWidthSmall};
-        }
-
-        @media screen and (min-device-width: 768px) {
-          width: ${theme.sizes.tableSpacerWidth};
-        }
+        ${sizeCss};
       `}
-    ></td>
+    >
+      <div
+        css={css`
+          background: ${props.color};
+          ${sizeCss};
+          //border-radius: 5px;
+        `}
+      ></div>
+    </td>
   );
 }
 

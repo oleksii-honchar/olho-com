@@ -17,16 +17,12 @@ export function HardSkills(): ReactElement {
     <TableSpacer color={theme.colors.sections.hardSkills.spacerBackground} />
   );
 
-  const EmptyCellSpacer = (): ReactElement => (
-    <TableSpacer/>
-  );
-
   return (
     <section id="hard-skills">
       <h1>Hard skills</h1>
       <table className="table">
         <tbody>
-          <tr>
+          <tr className="d-flex">
             <CellSpacer />
             <td>
               <h3>Frontend</h3>
@@ -68,7 +64,7 @@ export function HardSkills(): ReactElement {
 
       <table className="table">
         <tbody>
-          <tr>
+          <tr className="d-flex">
             <CellSpacer />
             <td>
               <div className="d-flex align-items-center">
@@ -79,7 +75,7 @@ export function HardSkills(): ReactElement {
               </div>
             </td>
           </tr>
-          <tr>
+          <tr className="d-flex">
             <CellSpacer />
             <td className="d-flex justify-content-start">
               <ul>

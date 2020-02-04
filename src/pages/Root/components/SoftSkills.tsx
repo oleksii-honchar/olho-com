@@ -16,7 +16,7 @@ export function SoftSkills(): ReactElement {
       <h1>Soft skills</h1>
       <table className="table">
         <tbody>
-          <tr>
+          <tr className="d-flex">
             <CellSpacer />
             <td>
               <h3>Strengths</h3>

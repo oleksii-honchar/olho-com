@@ -39,7 +39,7 @@ export function SocialLinks(): ReactElement {
           <Icon brand name="linkedin" color="white" transform="shrink-6" />
         </IconStack>
       </a>
-      <a href="https://github.com/aleksey-gonchar">
+      <a href="https://github.com/oleksii-honchar">
         <IconStack size="2x">
           <Icon name="circle" color="white" />
           <Icon brand name="github" />

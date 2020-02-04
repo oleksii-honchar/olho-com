@@ -36,7 +36,7 @@ export function Navigation(): ReactElement {
       </button>
       <div className="collapse navbar-collapse" id="navbarText">
         <div className="navbar-nav mr-auto">
-          <a className="nav-item nav-link active" href="#about">
+          <a className="nav-item nav-link" href="#about">
             About <span className="sr-only">(current)</span>
           </a>
           <a className="nav-item nav-link" href="#hard-skills">

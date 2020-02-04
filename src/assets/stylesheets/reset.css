@@ -18,7 +18,14 @@ body {
   color: inherit;
   background: transparent;
   min-width: 320px;
-  font-size: 1.2rem !important;
+
+  @media screen and (min-device-width: 376px) and (max-device-width: 768px) {
+    font-size: 1rem !important;
+  };
+
+  @media screen and (min-device-width: 768px) {
+    font-size: 1.2rem !important;
+  };
 }
 
 a {

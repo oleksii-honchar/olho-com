@@ -11,9 +11,15 @@ export function TableSpacer(
   return (
     <td
       css={css`
-        width: ${theme.sizes.tableSpacerWidth};
         background: ${props.color};
         padding: 0 !important;
+        @media screen and (min-device-width: 376px) and (max-device-width: 768px) {
+          width: 10px;
+        }
+
+        @media screen and (min-device-width: 768px) {
+          width: ${theme.sizes.tableSpacerWidth};
+        }
       `}
     ></td>
   );

@@ -15,7 +15,14 @@ export function JobItem(
 
   const jobItemCss = css`
     td:nth-of-type(2) {
-      width: 200px;
+      @media screen and (min-device-width: 376px) and (max-device-width: 768px) {
+        width: 140px;
+      }
+
+      @media screen and (min-device-width: 768px) {
+        width: 200px;
+      }
+
       text-align: end;
       font-weight: bolder;
       border-right: 1px darkgray;

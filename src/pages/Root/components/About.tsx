@@ -13,7 +13,7 @@ export function About(): ReactElement {
         About
       </h1>
       <p>
-        Hello! My name is Alex. I’m a professional full-circle software engineer
+        Hello! My name is Alex. I’m a professional full-cycle software engineer
         with 10+ years of experience in web technologies. And I have a solid
         background of desktop integration for different industries since
         2000-th. Since 2010th I took part in creating business solutions for 3

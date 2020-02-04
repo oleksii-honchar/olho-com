@@ -10,8 +10,18 @@ export function Header(): ReactElement {
     background-position: 50% bottom;
     border: none;
 
-    .col {
-      min-height: 260px;
+    @media screen and (min-device-width: 376px) and (max-device-width: 768px) {
+      height: 140px;
+      .col {
+        height: 140px;
+      }
+    }
+
+    @media screen and (min-device-width: 768px) {
+      height: 260px;
+      .col {
+        height: 260px;
+      }
     }
 
     .white-shadow {
@@ -25,44 +35,83 @@ export function Header(): ReactElement {
     }
     .avatar {
       padding: 10px;
-      position: absolute;
+      @media screen and (min-device-width: 376px) and (max-device-width: 768px) {
+        position: unset;
+      }
+
+      @media screen and (min-device-width: 768px) {
+        position: absolute;
+      }
+
       & > img {
         border: 4px solid white;
-        width: 100%;
-        max-width: 200px;
         height: 100%;
         border-radius: 100%;
         outline: none;
+
+        @media screen and (min-device-width: 376px) and (max-device-width: 768px) {
+          width: 100px;
+        }
+
+        @media screen and (min-device-width: 768px) and (max-device-width: 1200px) {
+          width: 140px;
+        }
+
+        @media screen and (min-device-width: 1200px) {
+          width: 200px;
+        }
+      }
+    }
+
+    .full-name {
+      @media screen and (min-device-width: 376px) and (max-device-width: 768px) {
+        font-size: 2rem;
+      }
+
+      @media screen and (min-device-width: 768px) and (max-device-width: 1200px) {
+        font-size: 2.5rem;
+      }
+
+      @media screen and (min-device-width: 1200px) {
+        font-size: 4rem;
+      }
+    }
+    .full-title {
+      @media screen and (min-device-width: 376px) and (max-device-width: 768px) {
+        font-size: 1rem;
+      }
+
+      @media screen and (min-device-width: 768px) and (max-device-width: 1200px) {
+        font-size: 1.25rem;
+      }
+
+      @media screen and (min-device-width: 1200px) {
+        font-size: 1.5rem;
+      }
+    }
+
+    .full-name-container {
+      @media screen and (min-device-width: 376px) and (max-device-width: 768px) {
+        margin: auto;
+      }
+
+      @media screen and (min-device-width: 768px) {
+        margin: auto;
       }
     }
   `;
 
   return (
     <div className="row justify-content-center" css={headerCss}>
-      <div className="col col-md-9 col-lg-9 d-flex align-items-center">
+      <div className="col col-sm-12 col-md-10 col-lg-9 d-flex align-items-center">
         <div className="avatar">
           <img src="/assets/images/userpic-02.jpg" />
         </div>
-        <div
-          className="d-flex flex-column justify-content-center"
-          css={css`
-            margin: auto;
-          `}
-        >
-          <h1
-            className="align-self-center white-shadow"
-            css={css`
-              font-size: 4rem;
-            `}
-          >
+        <div className="d-flex flex-column justify-content-center full-name-container">
+          <h1 className="align-self-center white-shadow full-name">
             Oleksii Honchar
           </h1>
-          <h5
-            className="align-self-center white-shadow"
-            css={css`
-              font-size: 1.5rem;
-            `}
-          >
+          <h5 className="align-self-center white-shadow full-title">
             Full-cycle Software Engineer
           </h5>
         </div>

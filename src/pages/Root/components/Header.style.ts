@@ -9,16 +9,16 @@ export const headerCss = css`
   border: none;
 
   @media screen and (max-device-width: 768px) {
-    height: 140px;
+    height: 200px;
     .col {
-      height: 140px;
+      height: 200px;
     }
   }
 
   @media screen and (min-device-width: 769px) {
-    height: 260px;
+    height: 360px;
     .col {
-      height: 260px;
+      height: 360px;
     }
   }
 
@@ -32,15 +32,6 @@ export const headerCss = css`
     @include transition(color 0.2s, border-color 0.5s);
   }
   .avatar {
-    padding: 10px;
-    @media screen and (max-device-width: 768px) {
-      position: unset;
-    }
-
-    @media screen and (min-device-width: 769px) {
-      position: absolute;
-    }
-
     & > img {
       border: 4px solid white;
       height: 100%;
@@ -49,14 +40,17 @@ export const headerCss = css`
 
       @media screen and (max-device-width: 768px) {
         width: 100px;
+        height: 100px;
       }
 
       @media screen and (min-device-width: 769px) and (max-device-width: 1200px) {
-        width: 140px;
+        width: 200px;
+        height: 200px;
       }
 
       @media screen and (min-device-width: 1201px) {
         width: 200px;
+        height: 200px;
       }
     }
   }
@@ -73,11 +67,5 @@ export const headerCss = css`
     @media screen and (min-device-width: 376px) and (max-device-width: 768px) { font-size: 1rem;}
     @media screen and (min-device-width: 769px) and (max-device-width: 1200px) { font-size: 1.25rem; }
     @media screen and (min-device-width: 1201px) { font-size: 1.5rem; }
-  }
-
-  .full-name-container {
-    @media screen and (max-device-width: 768px) { margin: auto;}
-
-    @media screen and (min-device-width: 769px) { margin: auto; }
   }
 `;

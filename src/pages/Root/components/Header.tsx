@@ -4,7 +4,7 @@ import React, { ReactElement } from "react";
 
 export function Header(): ReactElement {
   const headerCss = css`
-    background-image: url("/assets/images/bg-02-flipped.jpg");
+    background-image: url("images/bg-02-flipped.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 50% bottom;
@@ -105,7 +105,7 @@ export function Header(): ReactElement {
     <div className="row justify-content-center" css={headerCss}>
       <div className="col col-sm-12 col-md-10 col-lg-9 d-flex align-items-center">
         <div className="avatar">
-          <img src="/assets/images/userpic-02.jpg" />
+          <img src="images/userpic-02.jpg" />
         </div>
         <div className="d-flex flex-column justify-content-center full-name-container">
           <h1 className="align-self-center white-shadow full-name">

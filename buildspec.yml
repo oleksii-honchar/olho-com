@@ -19,8 +19,10 @@ phases:
       - npm run build
   post_build:
     commands:
-      - echo Sync /dist to $S3_BUCKET
+      - echo Sync /dist to S3 ...
       - aws s3 sync ./dist $S3_BUCKET
+      - echo Schedulling CloudFront invalidation...
+      - aws cloudfront create-invalidation --distribution-id $DISTRIBUTION_ID --paths "/*"
 cache:
   paths:
     - './node_modules/**/*'

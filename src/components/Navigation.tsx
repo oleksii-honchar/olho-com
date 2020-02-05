@@ -16,7 +16,7 @@ export function Navigation(): ReactElement {
     <nav className="navbar navbar-expand-lg navbar-dark bg-dark sticky-top" css={navCss} >
       <a className="navbar-brand" href="#">
         <img
-          src="/assets/images/maze.png"
+          src="images/maze.png"
           width="30"
           height="30"
           className="d-inline-block align-top"

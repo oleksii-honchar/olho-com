@@ -37,7 +37,7 @@ module.exports = (env) => ({
     path: path.join(__dirname, '../../dist'),
     filename: '[name].js',
     sourceMapFilename: '[name].map',
-    publicPath: './assets/',
+    publicPath: './',
   },
   plugins: [
     new LodashModuleReplacementPlugin(),

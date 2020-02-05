@@ -21,3 +21,6 @@ phases:
     commands:
       - echo Sync /dist to $S3_BUCKET
       - aws s3 sync ./dist $S3_BUCKET
+cache:
+  paths:
+    - './node_modules/**/*'

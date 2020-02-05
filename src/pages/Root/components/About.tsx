@@ -28,7 +28,7 @@ export function About(): ReactElement {
         Ready to take responsibility, execute and delegate for best performance.
       </p>
       <p>
-        I’m excited to drive and participate development process using agile
+        I’m excited to drive and join development process using agile
         practices for task management and devops. Among all personal qualities I
         would like to notice high personal standards and attention to details.
       </p>

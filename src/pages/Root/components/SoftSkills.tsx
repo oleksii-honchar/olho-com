@@ -7,12 +7,19 @@ import { useTheme } from "emotion-theming";
 export function SoftSkills(): ReactElement {
   const theme: any = useTheme();
 
+  const softSkillsCss = css`
+    td {
+      @media screen and (max-device-width: 375px) { padding: 0.1rem; }
+      @media screen and (min-device-width: 376px) { padding: 0.75rem; }
+    }  
+  `;
+
   const CellSpacer = (): ReactElement => (
     <TableSpacer color={theme.colors.sections.softSkills.spacerBackground} />
   );
 
   return (
-    <section id="soft-skills">
+    <section id="soft-skills" css={softSkillsCss}>
       <h1>Soft skills</h1>
       <table className="table">
         <tbody>

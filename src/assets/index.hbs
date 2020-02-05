@@ -6,21 +6,21 @@
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
+    gtag("js", new Date());
 
-    gtag('config', 'UA-157725698-1');
+    gtag("config", "UA-157725698-1");
   </script>
 
   <title>My Website Home Page</title>
-  <base href="/">
+  <base href=".//">
 
-  <link rel="apple-touch-icon" sizes="76x76" href="favicons/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16x16.png">
-  <link rel="manifest" href="favicons/manifest.json">
-  <link rel="shortcut icon" href="favicons/favicon.ico">
+  <link rel="apple-touch-icon" sizes="76x76" href="./favicons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./favicons/favicon-16x16.png">
+  <link rel="manifest" href="./favicons/manifest.json">
+  <link rel="shortcut icon" href="./favicons/favicon.ico">
 
-  <link href='assets/stylesheets/index.css' rel='stylesheet' />
+  <link href="./stylesheets/index.css" rel="stylesheet" />
   <link
     href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
     rel="stylesheet"
@@ -47,13 +47,13 @@
 </head>
 <body>
   <div id="app-root"></div>
-  <script type="text/javascript" src="bundle.js"></script>
+  <script type="text/javascript" src="./bundle.js"></script>
   <script>
-    $('.navbar-nav .nav-item').on('click', function(){
-      $('.navbar-collapse').collapse('hide');
+    $(".navbar-nav .nav-item").on("click", function(){
+      $(".navbar-collapse").collapse("hide");
     });
-    $('.navbar-brand').on('click', function(){
-      $('.navbar-collapse').collapse('hide');
+    $(".navbar-brand").on("click", function(){
+      $(".navbar-collapse").collapse("hide");
     });
   </script>
 </body>

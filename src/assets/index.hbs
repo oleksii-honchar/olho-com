@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" class="no-js">
+<head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-157725698-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-157725698-1');
+  </script>
+
+  <title>My Website Home Page</title>
+  <base href="/">
+
+  <link rel="apple-touch-icon" sizes="76x76" href="assets/favicons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicons/favicon-16x16.png">
+  <link rel="manifest" href="assets/favicons/manifest.json">
+  <link rel="shortcut icon" href="assets/favicons/favicon.ico">
+
+  <link href='assets/stylesheets/index.css' rel='stylesheet' />
+  <link
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+    crossorigin="anonymous"
+  >
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="msapplication-config" content="assets/favicons/browserconfig.xml">
+  <meta name="theme-color" content="#ffffff">
+  <script src="https://cdn.polyfill.io/v2/polyfill.min.js?features=default,Array.prototype.includes"></script>
+  <script
+    type="text/javascript"
+    src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"
+  ></script>
+
+  <script crossorigin src="https://unpkg.com/react@16/umd/react.{{scriptEnvSuffix}}.js"></script>
+  <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.{{scriptEnvSuffix}}.js"></script>
+  <script crossorigin src="https://unpkg.com/moment@2.24.0"></script>
+  <script crossorigin src="https://unpkg.com/jquery@3.4.1/dist/jquery.min.js"></script>
+  <script crossorigin src="https://unpkg.com/bootstrap@4.4.1/dist/js/bootstrap.min.js"></script>
+</head>
+<body>
+  <div id="app-root"></div>
+  <script type="text/javascript" src="assets/bundle.js"></script>
+  <script>
+    $('.navbar-nav .nav-item').on('click', function(){
+      $('.navbar-collapse').collapse('hide');
+    });
+    $('.navbar-brand').on('click', function(){
+      $('.navbar-collapse').collapse('hide');
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,15 @@
+@import "reset.css";
+
+section:before {
+  display: block;
+  height: 65px;
+  margin-top: -65px;
+  visibility: hidden;
+  content: "";
+}
+
+table,
+tr,
+td {
+  border: none !important;
+}

@@ -9,6 +9,12 @@ import { TableSpacer } from "src/components/TableSpacer";
 export function HardSkills(): ReactElement {
   const theme: any = useTheme();
 
+  const hardSkillsCss = css`
+    td {
+      @media screen and (max-device-width: 375px) { padding: 0.1rem; }
+      @media screen and (min-device-width: 376px) { padding: 0.75rem; }
+    }  
+  `;
   const rustyColorCss = css`
     color: darkgray;
   `;
@@ -18,7 +24,7 @@ export function HardSkills(): ReactElement {
   );
 
   return (
-    <section id="hard-skills">
+    <section id="hard-skills" css={hardSkillsCss}>
       <h1>Hard skills</h1>
       <table className="table">
         <tbody>
@@ -77,8 +83,8 @@ export function HardSkills(): ReactElement {
           </tr>
           <tr className="d-flex">
             <CellSpacer />
-            <td className="d-flex justify-content-start">
-              <ul>
+            <td>
+              <ul className="float-left">
                 <li>
                   Javascript/TypeScript <YearsBadge years={11} />
                 </li>
@@ -92,7 +98,7 @@ export function HardSkills(): ReactElement {
                   Node.js, Express.js <YearsBadge years={8} />
                 </li>
               </ul>
-              <ul>
+              <ul className="float-left">
                 <li>
                   MongoDB(Mongoose) <YearsBadge years={5.5} />
                 </li>

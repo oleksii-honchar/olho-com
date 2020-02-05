@@ -7,38 +7,41 @@ import { useTheme } from "emotion-theming";
 export function Education(): ReactElement {
   const theme: any = useTheme();
 
+  const educationCss = css`
+    td {
+      @media screen and (max-device-width: 375px) { padding: 0.1rem; }
+      @media screen and (min-device-width: 376px) { padding: 0.75rem; }
+    }  
+  `;
+
   const CellSpacer = (): ReactElement => (
     <TableSpacer color={theme.colors.sections.education.spacerBackground} />
   );
 
   return (
-    <section id="education">
+    <section id="education" css={educationCss}>
       <h1>Education</h1>
       <table className="table">
         <tbody>
           <tr className="d-flex">
             <CellSpacer />
-            <td>1996 - 2001</td>
+            <td css={css`min-width:110px`}>1996 - 2001</td>
             <td>
               <span>
                 Ukraine, Lugansk. East-Ukrainian National University named Dalia
               </span>
-              <dl>
-                <div className="d-flex">
-                  <dt>Education:&nbsp;</dt>
-                  <dd>High</dd>
-                </div>
-                <div className="d-flex">
-                  <dt>Grade:&nbsp;</dt>
-                  <dd>MA with distinction</dd>
-                </div>
-                <div className="d-flex">
-                  <dt>Speciality:&nbsp;</dt>
-                  <dd>
-                    Engineer of hydraulic and pneumatic machines and apparatus
+              <div className="d-flex">
+                <dl className="row">
+                  <dt className="col-sm-3">Education</dt>
+                  <dd className="col-sm-9">High</dd>
+                  <dt className="col-sm-3">Grade</dt>
+                  <dd className="col-sm-9">MA with distinction</dd>
+                  <dt className="col-sm-3">Speciality</dt>
+                  <dd className="col-sm-9">
+                      Engineer of hydraulic and pneumatic machines and apparatus
                   </dd>
-                </div>
-              </dl>
+                </dl>
+              </div>
             </td>
           </tr>
         </tbody>
@@ -47,7 +50,7 @@ export function Education(): ReactElement {
         <tbody>
           <tr className="d-flex">
             <CellSpacer />
-            <td>1993 - 1996</td>
+            <td css={css`min-width:110px`}>1993 - 1996</td>
             <td>
               <span>Ukraine, Lugansk. Physics and Mathematics Lyceum № 24</span>
             </td>

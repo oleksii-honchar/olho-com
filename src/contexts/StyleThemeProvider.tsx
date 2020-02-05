@@ -18,7 +18,8 @@ export function StyleThemeProvider(
 
   const sizes = {
     tableSpacerWidth: "20px",
-    tableSpacerWidthSmall: "10px"
+    tableSpacerWidthSmall: "10px",
+    tableSpacerWidthLittle: "5px"
   };
 
   const colors = {

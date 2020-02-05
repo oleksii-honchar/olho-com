@@ -9,11 +9,15 @@ export function TableSpacer(
 ): ReactElement {
   const theme: any = useTheme();
   const sizeCss = css`
+    @media screen and (max-device-width: 375px) {
+      width: ${theme.sizes.tableSpacerWidthLittle};
+    }
+    
     @media screen and (min-device-width: 376px) and (max-device-width: 768px) {
       width: ${theme.sizes.tableSpacerWidthSmall};
     }
 
-    @media screen and (min-device-width: 768px) {
+    @media screen and (min-device-width: 769px) {
       width: ${theme.sizes.tableSpacerWidth};
     }
   `;

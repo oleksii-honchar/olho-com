@@ -1,5 +1,9 @@
 @import "reset.css";
 
+body {
+  font-family: 'Helvetica Neue', sans-serif !important;
+}
+
 section:before {
   display: block;
   height: 65px;

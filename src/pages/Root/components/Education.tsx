@@ -20,7 +20,7 @@ export function Education(): ReactElement {
 
   return (
     <section id="education" css={educationCss}>
-      <h1>Education</h1>
+      <h2>Education</h2>
       <table className="table">
         <tbody>
           <tr className="d-flex">

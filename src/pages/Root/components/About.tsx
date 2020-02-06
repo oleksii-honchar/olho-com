@@ -5,13 +5,13 @@ import React, { ReactElement, Fragment } from "react";
 export function About(): ReactElement {
   return (
     <section id="about">
-      <h1
+      <h2
         css={css`
           padding-top: 10px;
         `}
       >
         About
-      </h1>
+      </h2>
       <p>
         Hello! My name is Alex. I’m a professional full-cycle software engineer
         with 10+ years of experience in web technologies. And I have a solid

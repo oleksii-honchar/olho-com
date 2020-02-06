@@ -20,7 +20,7 @@ export function SoftSkills(): ReactElement {
 
   return (
     <section id="soft-skills" css={softSkillsCss}>
-      <h1>Soft skills</h1>
+      <h2>Soft skills</h2>
       <table className="table">
         <tbody>
           <tr className="d-flex">

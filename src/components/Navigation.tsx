@@ -49,7 +49,7 @@ export function Navigation(): ReactElement {
             Education
           </a>
           <a className="nav-item nav-link" href="#experience">
-            Experience
+            Work experience
           </a>
         </div>
         <SocialLinks />

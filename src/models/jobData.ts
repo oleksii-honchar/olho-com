@@ -19,7 +19,7 @@ export const jobData: Job[] = [
     specialization: "Tech stack maintenance & development",
     experienceScope:
       "Participate pre-sales. Application architecture design/support/implement. JS unit team coaching/leading & mentoring. Define stack tools/frameworks/code standards. Arrange developer learning path and grade assessments. Commercial project audit and support. Development of Internal tools/modules/approaches. Mentoring js unit team leads. Define inter-unit process collaboration.",
-    tools: "Atlassian, Gitlab-ci, Docker, Jenkins"
+    tools: "AWS, Docker, Nginx. Mongo, PostgreSQL, Gitlab-ci, Atlassian, Docker, Jenkins, Javascript, Typescript, Node.js, React, Angular, Lerna"
   },
   {
     customer: "SolidOpinion",
@@ -41,7 +41,7 @@ export const jobData: Job[] = [
     roleDescription: "Team leader, Chief programmer, UI/UX expert",
     specialization: "Medical professional and client collaboration platform",
     experienceScope:
-      "Maintain product development from scratch. Analysis and planning. Defining tech scope. Sprint planning. JobItem story writing task splitting and acceptance. Api development.",
+      "Maintain product development from scratch. Analysis and planning. Defining tech scope. Sprint planning. Task management and decomposition. Api development.",
     tools:
       "MongoDB, Node-js, Express, React, Flux, Lodash, Gulp, Mocha, Twitter-Bootstrap, AW, Codeship"
   },

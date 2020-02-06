@@ -10,6 +10,9 @@ export function HardSkills(): ReactElement {
   const theme: any = useTheme();
 
   const hardSkillsCss = css`
+    table {
+      max-width: 500px;
+    }
     td {
       @media screen and (max-device-width: 375px) { padding: 0.1rem; }
       @media screen and (min-device-width: 376px) { padding: 0.75rem; }
@@ -25,8 +28,9 @@ export function HardSkills(): ReactElement {
 
   return (
     <section id="hard-skills" css={hardSkillsCss}>
-      <h1>Hard skills</h1>
-      <table className="table">
+      <h2>Hard skills</h2>
+      <div className="clearfix">
+      <table className="table float-left">
         <tbody>
           <tr className="d-flex">
             <CellSpacer />
@@ -45,6 +49,13 @@ export function HardSkills(): ReactElement {
                 <li>Node.js, Express.js, WebSocket, Socket.io, Ruby</li>
               </ul>
             </td>
+          </tr>
+        </tbody>
+      </table>
+
+      <table className="table float-left">
+        <tbody>
+          <tr className="d-flex">
             <CellSpacer />
             <td>
               <h3>Database</h3>
@@ -67,7 +78,7 @@ export function HardSkills(): ReactElement {
           </tr>
         </tbody>
       </table>
-
+      </div>
       <table className="table">
         <tbody>
           <tr className="d-flex">

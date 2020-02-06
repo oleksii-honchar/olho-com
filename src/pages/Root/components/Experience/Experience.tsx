@@ -25,7 +25,7 @@ export function Experience(): ReactElement {
 
   return (
     <section id="experience">
-      <h1>Experience</h1>
+      <h2>Work experience</h2>
       {history}
     </section>
   );

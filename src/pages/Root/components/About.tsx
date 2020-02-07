@@ -32,7 +32,7 @@ export function About(): ReactElement {
         practices for task management and devops. Among all personal qualities I
         would like to notice high personal standards and attention to details.
       </p>
-      <p>I&apos;ll be glad cooperation!</p>
+      <p>I&apos;m glad to cooperate!</p>
     </section>
   );
 }

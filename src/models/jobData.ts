@@ -16,7 +16,7 @@ export const jobData: Job[] = [
     period: "10.2017 - 10.2019",
     duration: "2y",
     roleDescription: "App Architect/ Tech Lead",
-    specialization: "Tech stack maintenance & development",
+    specialization: "JS unit leadership, projects bootstrap/supervision, architecture design/validation. Architecture design and POC implementation for massive market-place using micro-frontend approach with server-side rendering. Architecture design and POC implementation for document management system with form designer and workflow for SaaS platform.",
     experienceScope:
       "Participate pre-sales. Application architecture design/support/implement. JS unit team coaching/leading & mentoring. Define stack tools/frameworks/code standards. Arrange developer learning path and grade assessments. Commercial project audit and support. Development of Internal tools/modules/approaches. Mentoring js unit team leads. Define inter-unit process collaboration.",
     tools: "AWS, Docker, Nginx. Mongo, PostgreSQL, Gitlab-ci, Atlassian, Docker, Jenkins, Javascript, Typescript, Node.js, React, Angular, Lerna"
@@ -27,7 +27,7 @@ export const jobData: Job[] = [
     period: "10.2015 - 10.2017",
     duration: "2y",
     roleDescription: "Frontend Architect & Team lead",
-    specialization: "Massive commentary and monetization platform",
+    specialization: "Massive commentary and monetization platform. Family of micro-frontend commenting applications for integration in digital media portals. Text ads and monetization platform.",
     experienceScope:
       "Analysis and planning. Defining tech stack. Single page app development, microservices, component architecture, team coaching & mentoring.",
     tools:
@@ -39,7 +39,7 @@ export const jobData: Job[] = [
     period: "03.2015 - 08.2015",
     duration: "6m",
     roleDescription: "Team leader, Chief programmer, UI/UX expert",
-    specialization: "Medical professional and client collaboration platform",
+    specialization: "Medical professional and client collaboration platform. It is a social network for consultation and recommendation services. Both medical professionals and clients are able to get paid advice. Professionals have ratings, comments and forums, screening and network of colleagues.",
     experienceScope:
       "Maintain product development from scratch. Analysis and planning. Defining tech scope. Sprint planning. Task management and decomposition. Api development.",
     tools:
@@ -51,7 +51,7 @@ export const jobData: Job[] = [
     period: "09.2014 - 03.2015",
     duration: "6m",
     roleDescription: "full stack javascript developer",
-    specialization: "full-stack cloud service integration platform",
+    specialization: "Cloud service integration platform. SaaS platform which allows using predefined connectors transform data/events from one source to another. E.g. ebay orders to Magento CMS, Wallmart analytics to SalesForce, etc. Buit using microservices in AWS with overall data encryption.",
     experienceScope:
       "Intranet communication messages flow encryption, s3 file storage encryption. Custom API to custom API data flow configuration and implementation. Ember.js based application extension. ",
     tools:
@@ -64,7 +64,7 @@ export const jobData: Job[] = [
     duration: "6m",
     roleDescription: "senior software developer",
     specialization: "full-stack r&d projects",
-    experienceScope: "social media data mining r&d",
+    experienceScope: "Social media data mining. Design and deploy node.js microservice based data-crawlers. Build web interface for data mining and analytics",
     tools: "Node.js, Twitter-bootstrap, React "
   },
   {
@@ -74,8 +74,8 @@ export const jobData: Job[] = [
     duration: "2y 4m",
     roleDescription: "Project manager, developer, analyst",
     specialization:
-      "CRM+ERP+CMS constructor that allows visually simulate arbitrary data structures and business processes. The system allows you to run from one database any shops, websites, CRM.",
-    experienceScope: "Fin tech Software Architecture",
+      "CRM+ERP+CMS constructor that allows visually construct arbitrary data structures and business processes. The system allows you to run from one database to any shops, websites, CRM. SaaS business model.",
+    experienceScope: "Fintech Software Architecture. Business analysis and process design. Domain models definition and database design. Business logic implementation and CI/CD. Web application design & implementation.",
     tools:
       "Ruby, MongoDB, Require-js, Node-js, jQuery, CoffeeScript, Styl, Twitter-Bootstrap"
   },
@@ -88,7 +88,7 @@ export const jobData: Job[] = [
     specialization:
       "Automation of the enterprises operating in the field of control securities flow. Original scalable management accounting of securities transactions across the group of companies from several countries.",
     experienceScope:
-      'Design and development "from scratch" system for all operational accounting cycle securities turnover',
+      'System design and development "from scratch" for all operational accounting cycle securities turnover. Business analysis and process design. Domain models definition and database design. Business logic implementation and CI/CD. Document flow and forms design and optimisation.',
     tools: "1c, Rational Rose"
   },
   {

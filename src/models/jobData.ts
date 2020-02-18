@@ -15,7 +15,7 @@ export const jobData: Job[] = [
     year: 2019,
     period: "10.2017 - 10.2019",
     duration: "2y",
-    roleDescription: "App Architect/ Tech Lead",
+    roleDescription: "Application Architect/ Tech Lead",
     specialization: "JS unit leadership, projects bootstrap/supervision, architecture design/validation. Architecture design and POC implementation for massive market-place using micro-frontend approach with server-side rendering. Architecture design and POC implementation for document management system with form designer and workflow for SaaS platform.",
     experienceScope:
       "Participate pre-sales. Application architecture design/support/implement. JS unit team coaching/leading & mentoring. Define stack tools/frameworks/code standards. Arrange developer learning path and grade assessments. Commercial project audit and support. Development of Internal tools/modules/approaches. Mentoring js unit team leads. Define inter-unit process collaboration.",
@@ -38,7 +38,7 @@ export const jobData: Job[] = [
     year: 2015,
     period: "03.2015 - 08.2015",
     duration: "6m",
-    roleDescription: "Team leader, Chief programmer, UI/UX expert",
+    roleDescription: "Team Lead, Chief programmer, UI/UX expert",
     specialization: "Medical professional and client collaboration platform. It is a social network for consultation and recommendation services. Both medical professionals and clients are able to get paid advice. Professionals have ratings, comments and forums, screening and network of colleagues.",
     experienceScope:
       "Maintain product development from scratch. Analysis and planning. Defining tech scope. Sprint planning. Task management and decomposition. Api development.",
@@ -50,7 +50,7 @@ export const jobData: Job[] = [
     year: 2015,
     period: "09.2014 - 03.2015",
     duration: "6m",
-    roleDescription: "full stack javascript developer",
+    roleDescription: "Full Stack  Javascript Engineer",
     specialization: "Cloud service integration platform. SaaS platform which allows using predefined connectors transform data/events from one source to another. E.g. ebay orders to Magento CMS, Wallmart analytics to SalesForce, etc. Buit using microservices in AWS with overall data encryption.",
     experienceScope:
       "Intranet communication messages flow encryption, s3 file storage encryption. Custom API to custom API data flow configuration and implementation. Ember.js based application extension. ",
@@ -62,7 +62,7 @@ export const jobData: Job[] = [
     year: 2014,
     period: "03.2014 - 9.2014",
     duration: "6m",
-    roleDescription: "senior software developer",
+    roleDescription: "Senior Software Engineer",
     specialization: "full-stack r&d projects",
     experienceScope: "Social media data mining. Design and deploy node.js microservice based data-crawlers. Build web interface for data mining and analytics",
     tools: "Node.js, Twitter-bootstrap, React "
@@ -72,7 +72,7 @@ export const jobData: Job[] = [
     year: 2014,
     period: "11.2011 - 3.2014",
     duration: "2y 4m",
-    roleDescription: "Project manager, developer, analyst",
+    roleDescription: "Project Manager, Senior Software Engineer, Business Analyst",
     specialization:
       "CRM+ERP+CMS constructor that allows visually construct arbitrary data structures and business processes. The system allows you to run from one database to any shops, websites, CRM. SaaS business model.",
     experienceScope: "Fintech Software Architecture. Business analysis and process design. Domain models definition and database design. Business logic implementation and CI/CD. Web application design & implementation.",
@@ -84,7 +84,7 @@ export const jobData: Job[] = [
     year: 2011,
     period: "11.2009 - 11.2011",
     duration: "2y",
-    roleDescription: "Project manager, developer, architect",
+    roleDescription: "Project Manager, Senior Software Engineer, Application Architect",
     specialization:
       "Automation of the enterprises operating in the field of control securities flow. Original scalable management accounting of securities transactions across the group of companies from several countries.",
     experienceScope:
@@ -97,7 +97,7 @@ export const jobData: Job[] = [
     period: "11.2006 - 11.2008",
     duration: "2y",
     roleDescription:
-      "Project manager, team lead. Manage local and remote development team. Analysis and design of the system.",
+      "Project Manager, Team Lead. Manage local and remote development team. Analysis and design of the system.",
     specialization:
       " Development of subsystems for operational records of a large enterprise. Multi corporate and multivariate account. Managing a distributed team of developers. Conducting technical and design documentation. Simulation of logic systems and business processes of the enterprise.",
     experienceScope:
@@ -109,7 +109,7 @@ export const jobData: Job[] = [
     year: 2006,
     period: "06.2004 - 09.2006",
     duration: "2y",
-    roleDescription: "Business Analyst, Application Architector, developer",
+    roleDescription: "Business Analyst, Application Architect, Software Engineer",
     specialization:
       'Integrated automation of the group of companies with branches. Base Platform - "1c Enterprise 7.7." Organization of the system for a full two-way exchange of information within the system objects having different configurations.',
     experienceScope:
@@ -121,7 +121,7 @@ export const jobData: Job[] = [
     year: 2004,
     period: "11.2001 - 06.2004",
     duration: "2y 7m",
-    roleDescription: "Analyst, developer, team lead, project manager",
+    roleDescription: "Business Analyst, Software Engineer, Team Lead, Project Manager",
     specialization:
       'Project management, development and implementation of automated ERP system on a platform of "1C: Enterprise", the development of web-content, design, staff training',
     experienceScope:
@@ -133,7 +133,7 @@ export const jobData: Job[] = [
     year: 2000,
     period: "08.1999 - 06.2000",
     duration: "10m",
-    roleDescription: "developer",
+    roleDescription: "Software Engineer",
     specialization: "development of medical expert systems, database",
     experienceScope: `The system was able to learn to put the correct diagnosis by selected methodology. And  had never been automated until then. And also had a graphical user interface in text mode, similar to the standard library “turbo-vision”, but totally re-written using OOP.{new-line}
     Development of the original single-file databases and libraries for text interface, including a map of all the basic elements of forms and input fields.`,
@@ -144,7 +144,7 @@ export const jobData: Job[] = [
     year: 1999,
     period: "05.1996 - 07.1999",
     duration: "3y 2m",
-    roleDescription: "trainee",
+    roleDescription: "Trainee",
     specialization: "game development, arcade, artificial intelligence r&d",
     experienceScope:
       "Privilege of working in the first Ukrainian company that after the release of a successful product left all the staff and their families to Australia 8)",

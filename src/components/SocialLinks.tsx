@@ -21,7 +21,7 @@ export function SocialLinks(): ReactElement {
 
   return (
     <div css={elCss}>
-      <a href="http://telegram.me/tuiteraz">
+      <a href="http://telegram.me/OleksiiHonchar">
         <IconStack size="2x">
           <Icon name="circle" />
           <Icon name="paper-plane" color="white" transform="shrink-6" />

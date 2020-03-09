@@ -1,5 +1,6 @@
 const webpackMerge = require('webpack-merge');
 const { BundleAnalyzerPlugin } = require('webpack-bundle-analyzer')
+const { diff } = require('deep-object-diff');
 
 // Short usage reference
 // `NODE_ENV` = development | test | production
@@ -22,31 +23,33 @@ module.exports = (env) => {
 
   generateIndexHtml(env);
 
-  let cfg = baseCfg(env);
+  const envES2015 = { ...env, TS_TARGET: 'es5'};
+  const envES2020 = { ...env, TS_TARGET: 'es20'};
 
-  cfg = webpackMerge(cfg, moduleCfg);
-  cfg = webpackMerge(cfg, externalsCfg);
+  let configs = [ baseCfg(envES2015), baseCfg(envES2020) ]
+    .map((cfg) => webpackMerge(cfg, moduleCfg))
+    .map((cfg) => webpackMerge(cfg, externalsCfg));
 
   if (env.BUILD_ANALYZE === 'true') {
     console.log('[config:webpack] bundle analyzer included');
 
-    cfg = webpackMerge(cfg, {
+    configs = configs.map((cfg) => webpackMerge(cfg, {
       plugins: [ new BundleAnalyzerPlugin() ]
-    });
+    }));
   }
 
   if (process.env.NODE_ENV !== 'production') {
-    cfg = webpackMerge(cfg, {
+    configs = configs.map((cfg) => webpackMerge(cfg, {
       devtool: 'inline-source-map',
-    });
+    }));
 
     console.log('[config:webpack] config composition completed');
 
-    return cfg;
+    return configs;
   }
 
-  cfg = webpackMerge(cfg, prodCfg);
+  configs = configs.map((cfg) => webpackMerge(cfg, prodCfg));
 
   console.log('[config:webpack] config composition completed');
-  return cfg;
+  return configs;
 }

@@ -7,14 +7,13 @@
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
     "resolveJsonModule": false,
-    "incremental": true,
     "importHelpers": true,
     "jsx": "react",
     "lib": [
       "dom",
       "esnext"
     ],
-    "module": "es6",
+    "module": "ES2020",
     "moduleResolution": "node",
     "newLine": "lf",
     "noEmit": true,
@@ -28,16 +27,16 @@
     "sourceMap": true,
     "strict": true,
     "suppressImplicitAnyIndexErrors": true,
-    "target": "es5",
-    "typeRoots": [ // relative to package.json path
+    "target": "ES2020",
+    "typeRoots": [
       "../node_modules/@types",
       "../src/typings"
     ]
   },
-  "include": [ // relative to ./configs/tsconfig.json
+  "include": [
     "../src/**/*"
   ],
-  "exclude": [ // relative to ./configs/tsconfig.json
+  "exclude": [
     "../node_modules",
     "../configs",
     "../dist",

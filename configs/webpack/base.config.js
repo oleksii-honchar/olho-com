@@ -10,8 +10,8 @@ console.log('[config:webpack:snippet] Base loaded');
 const pkg = require('../../package.json');
 
 module.exports = (env) => {
-  env.TS_TARGET = env.TS_TARGET || 'es5';
-  const outputSuff = env.TS_TARGET === 'es5' ? 'es5.js': 'mjs';
+  env.TS_TARGET = env.TS_TARGET || 'es3';
+  const outputSuff = env.TS_TARGET === 'es3' ? 'es3.js': 'mjs';
 
   console.log(`[config:webpack:snippet] Base: processing "${env.TS_TARGET}" config`);
 

@@ -22,10 +22,10 @@ module.exports = (env) => {
 
   generateIndexHtml(env);
 
-  const envES2015 = { ...env, TS_TARGET: 'es5'};
+  const envES2013 = { ...env, TS_TARGET: 'es3'};
   const envES2020 = { ...env, TS_TARGET: 'es20'};
 
-  let configs = [ baseCfg(envES2015), baseCfg(envES2020) ]
+  let configs = [ baseCfg(envES2013), baseCfg(envES2020) ]
     .map((cfg) => webpackMerge(cfg, moduleCfg))
     .map((cfg) => webpackMerge(cfg, externalsCfg));
 

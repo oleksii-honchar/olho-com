@@ -61,6 +61,8 @@
     src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"
   ></script>
 
+  <script src="scripts/safari-nomodule.js"></script>
+
   <script crossorigin src="https://unpkg.com/react@16/umd/react.{{scriptEnvSuffix}}.js"></script>
   <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.{{scriptEnvSuffix}}.js"></script>
   <script crossorigin src="https://unpkg.com/moment@2.24.0"></script>
@@ -69,7 +71,8 @@
 </head>
 <body>
   <div id="app-root"></div>
-  <script type="text/javascript" src="bundle.js"></script>
+  <script type="module" src="app.bundle.mjs"></script>
+  <script nomodule src="app.bundle.es5.js"></script>
   <script>
     $(".navbar-nav .nav-item").on("click", function(){
       $(".navbar-collapse").collapse("hide");

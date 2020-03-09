@@ -1,6 +1,5 @@
 const webpackMerge = require('webpack-merge');
 const { BundleAnalyzerPlugin } = require('webpack-bundle-analyzer')
-const { diff } = require('deep-object-diff');
 
 // Short usage reference
 // `NODE_ENV` = development | test | production

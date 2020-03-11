@@ -11,8 +11,9 @@
     "jsx": "react",
     "lib": [
       "dom",
-      "esnext"
+      "es5"
     ],
+    "module": "CommonJS",
     "moduleResolution": "node",
     "newLine": "lf",
     "noEmit": true,
@@ -36,7 +37,6 @@
     "../src/**/*"
   ],
   "exclude": [
-    "../node_modules",
     "../configs",
     "../dist",
     "../docs",

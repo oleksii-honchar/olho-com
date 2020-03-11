@@ -2,101 +2,103 @@ const path = require('path');
 
 console.log('[config:webpack:snippet] Module loaded');
 
-module.exports = {
-  module: {
-    rules: [
-      {
-        enforce: 'pre',
-        test: /\.[tj]sx?$/,
-        use: 'source-map-loader',
-      },
-      {
-        test: /\.[tj]sx?$/,
-        loader: 'ts-loader',
-        options: {
-          transpileOnly: true,
+module.exports = (env) => {
+  return {
+    module: {
+      rules: [
+        {
+          enforce: 'pre',
+          test: /\.[tj]sx?$/,
+          use: 'source-map-loader',
         },
-        exclude: [
-          /\.(spec|e2e|d)\.[tj]sx?$/,
-          /node_modules/,
-        ],
-      },
-      {
-        test: /\.(eot|ttf|woff|woff2)$/,
-        use: {
-          loader: 'file-loader',
+        {
+          test: /\.[tj]sx?$/,
+          loader: 'ts-loader',
           options: {
-            name: '[name].[ext]',
-            outputPath: 'fonts/',
+            transpileOnly: true,
+            configFile: path.join(__dirname, `../tsconfig.${env.TS_TARGET}.json`)
           },
+          exclude: [
+            /\.(spec|e2e|d)\.[tj]sx?$/
+          ],
         },
-      },
-      {
-        test: /\.(jpe?g|png|svg|gif|cur)$/,
-        exclude: /icons/,
-        use: {
-          loader: 'file-loader',
-          options: {
-            name: '[name].[ext]',
-            outputPath: 'images/',
-          },
-        },
-      },
-      {
-        test: /\.svg/,
-        include: /icons/,
-        use: [{
-          loader: 'svg-inline-loader',
-          options: {
-            removeSVGTagAttrs: false,
-          },
-        }],
-      },
-      {
-        test: /\.css$/,
-        include: /src\/assets/,
-        use: [
-          'style-loader',
-          {
-            loader: 'css-loader',
+        {
+          test: /\.(eot|ttf|woff|woff2)$/,
+          use: {
+            loader: 'file-loader',
             options: {
-              importLoaders: 1,
+              name: '[name].[ext]',
+              outputPath: 'fonts/',
             },
           },
-        ],
-      },
-      {
-        test: /\.css$/,
-        exclude: /src\/assets/,
-        use: [
-          'style-loader',
-          {
-            loader: 'css-loader',
+        },
+        {
+          test: /\.(jpe?g|png|svg|gif|cur)$/,
+          exclude: /icons/,
+          use: {
+            loader: 'file-loader',
             options: {
-              modules: true,
-              importLoaders: 1,
+              name: '[name].[ext]',
+              outputPath: 'images/',
             },
           },
-          {
-            loader: 'postcss-loader',
+        },
+        {
+          test: /\.svg/,
+          include: /icons/,
+          use: [{
+            loader: 'svg-inline-loader',
             options: {
-              config: {
-                ctx: {
-                  'postcss-preset-env': {},
-                  'cssnano': {},
-                  'env': process.env.NODE_ENV,
-                },
-                path: path.join(__dirname, '../postcss.config.js'),
+              removeSVGTagAttrs: false,
+            },
+          }],
+        },
+        {
+          test: /\.css$/,
+          include: /src\/assets/,
+          use: [
+            'style-loader',
+            {
+              loader: 'css-loader',
+              options: {
+                importLoaders: 1,
               },
             },
-          },
-        ],
-      }
-    ],
-    noParse: [
-      /\.(spec|e2e|d)\.[tj]sx?$/,
-      /LICENSE/,
-      /README.md/,
-    ],
+          ],
+        },
+        {
+          test: /\.css$/,
+          exclude: /src\/assets/,
+          use: [
+            'style-loader',
+            {
+              loader: 'css-loader',
+              options: {
+                modules: true,
+                importLoaders: 1,
+              },
+            },
+            {
+              loader: 'postcss-loader',
+              options: {
+                config: {
+                  ctx: {
+                    'postcss-preset-env': {},
+                    'cssnano': {},
+                    'env': process.env.NODE_ENV,
+                  },
+                  path: path.join(__dirname, '../postcss.config.js'),
+                },
+              },
+            },
+          ],
+        }
+      ],
+      noParse: [
+        /\.(spec|e2e|d)\.[tj]sx?$/,
+        /LICENSE/,
+        /README.md/,
+      ],
+    }
   }
 };

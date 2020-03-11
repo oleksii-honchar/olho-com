@@ -22,12 +22,15 @@ module.exports = (env) => {
 
   generateIndexHtml(env);
 
-  const envES2013 = { ...env, TS_TARGET: 'es3'};
+  const envES2015 = { ...env, TS_TARGET: 'es5'};
   const envES2020 = { ...env, TS_TARGET: 'es20'};
 
-  let configs = [ baseCfg(envES2013), baseCfg(envES2020) ]
-    .map((cfg) => webpackMerge(cfg, moduleCfg))
-    .map((cfg) => webpackMerge(cfg, externalsCfg));
+  let configs = [ baseCfg(envES2015), baseCfg(envES2020) ];
+  configs[0] = webpackMerge(configs[0], moduleCfg(envES2015));
+  configs[1] = webpackMerge(configs[1], moduleCfg(envES2020));
+
+  configs[0] = webpackMerge(configs[0], externalsCfg);
+  configs[1] = webpackMerge(configs[1], externalsCfg);
 
   if (env.BUILD_ANALYZE === 'true') {
     console.log('[config:webpack] bundle analyzer included');

@@ -72,7 +72,7 @@ module.exports = {
     },
     'import/resolver': {
       'typescript': {
-        directory: './configs/tsconfig.json'
+        directory: './configs/tsconfig.es20.json'
       }
     }
   },

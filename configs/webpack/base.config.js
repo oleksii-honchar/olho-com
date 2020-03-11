@@ -10,8 +10,7 @@ console.log('[config:webpack:snippet] Base loaded');
 const pkg = require('../../package.json');
 
 module.exports = (env) => {
-  env.TS_TARGET = env.TS_TARGET || 'es3';
-  const outputSuff = env.TS_TARGET === 'es3' ? 'es3.js': 'mjs';
+  const outputSuff = env.TS_TARGET === 'es5' ? 'es5.js': 'mjs';
 
   console.log(`[config:webpack:snippet] Base: processing "${env.TS_TARGET}" config`);
 
@@ -36,13 +35,15 @@ module.exports = (env) => {
       ],
       plugins: [
         new TsConfigPathsPlugin({
-          configFile: path.join(__dirname, `../tsconfig.${env.TS_TARGET}.json`)
+          configFile: path.join(__dirname, `../tsconfig.${env.TS_TARGET}.json`),
+          logLevel: 'info'
         })
       ]
     },
     output: {
       path: path.join(__dirname, '../../dist'),
         filename: `[name].bundle.${outputSuff}`,
+        chunkFilename: `[name].bundle.${outputSuff}`,
         sourceMapFilename: `[name].${env.TS_TARGET}.map`,
         publicPath: './',
     },
@@ -65,7 +66,6 @@ module.exports = (env) => {
         to: '.',
         ignore: [ '*.hbs', '.DS_Store' ],
       }]),
-      // new webpack.optimize.ModuleConcatenationPlugin()
     ],
     node: false,
     watchOptions: {

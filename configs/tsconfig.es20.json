@@ -13,6 +13,7 @@
       "dom",
       "esnext"
     ],
+    "module": "esnext",
     "moduleResolution": "node",
     "newLine": "lf",
     "noEmit": true,

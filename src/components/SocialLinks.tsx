@@ -4,6 +4,7 @@ import React, { ReactElement } from "react";
 import { useTheme } from "emotion-theming";
 
 import { Icon, IconStack } from "src/components/Icon";
+import { Link } from "./Link";
 
 export function SocialLinks(): ReactElement {
   const theme: any = useTheme();
@@ -21,30 +22,30 @@ export function SocialLinks(): ReactElement {
 
   return (
     <div css={elCss}>
-      <a href="http://telegram.me/OleksiiHonchar">
+      <Link href="http://telegram.me/OleksiiHonchar">
         <IconStack size="2x">
           <Icon name="circle" />
           <Icon name="paper-plane" color="white" transform="shrink-6" />
         </IconStack>
-      </a>
-      <a href="https://fb.com/gonchara.net">
+      </Link>
+      <Link href="https://fb.com/gonchara.net">
         <IconStack size="2x">
           <Icon name="circle" color="white" />
           <Icon brand name="facebook" />
         </IconStack>
-      </a>
-      <a href="https://ua.linkedin.com/in/alekseygonchar">
+      </Link>
+      <Link href="https://ua.linkedin.com/in/alekseygonchar">
         <IconStack size="2x">
           <Icon name="circle" />
           <Icon brand name="linkedin" color="white" transform="shrink-6" />
         </IconStack>
-      </a>
-      <a href="https://github.com/oleksii-honchar">
+      </Link>
+      <Link href="https://github.com/oleksii-honchar">
         <IconStack size="2x">
           <Icon name="circle" color="white" />
           <Icon brand name="github" />
         </IconStack>
-      </a>
+      </Link>
     </div>
   );
 }

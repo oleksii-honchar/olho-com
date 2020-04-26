@@ -23,12 +23,6 @@
     "watch": "run-p types:watch watch:loc",
     "watch:loc": "bash scripts/watch.loc.sh"
   },
-  "husky": {
-    "hooks": {
-      "pre-commit": "npm run check:all",
-      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS --config=./configs/commitlint.config.js"
-    }
-  },
   "config": {
     "commitizen": {
       "path": "node_modules/cz-conventional-changelog"

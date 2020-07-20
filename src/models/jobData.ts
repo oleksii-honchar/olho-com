@@ -11,11 +11,22 @@ export interface Job {
 
 export const jobData: Job[] = [
   {
+    customer: "AgileEngine",
+    year: 2020,
+    period: "2.2020 - now",
+    duration: "~6m",
+    roleDescription: "Tech Lead",
+    specialization: "Web application architecture design/support/implementation. Development team leading.",
+    experienceScope:
+      "Participate pre-sales. Application architecture design/support/implement. JS unit team coaching/leading & mentoring. Define stack tools/frameworks. Commercial project audit and support.",
+    tools: "AWS, Docker, Nginx. Mongo, PostgreSQL, Atlassian, Docker, Javascript, Typescript, Node.js, Reac, Lerna"
+  },
+  {
     customer: "Ciklum",
-    year: 2019,
-    period: "10.2017 - 10.2019",
-    duration: "2y",
-    roleDescription: "Application Architect/ Tech Lead",
+    year: 2020,
+    period: "10.2017 - 1.2020",
+    duration: "2y 4m",
+    roleDescription: "Application Architect / Tech Lead",
     specialization: "JS unit leadership, projects bootstrap/supervision, architecture design/validation. Architecture design and POC implementation for massive market-place using micro-frontend approach with server-side rendering. Architecture design and POC implementation for document management system with form designer and workflow for SaaS platform.",
     experienceScope:
       "Participate pre-sales. Application architecture design/support/implement. JS unit team coaching/leading & mentoring. Define stack tools/frameworks/code standards. Arrange developer learning path and grade assessments. Commercial project audit and support. Development of Internal tools/modules/approaches. Mentoring js unit team leads. Define inter-unit process collaboration.",

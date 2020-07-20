@@ -18,7 +18,7 @@ export const jobData: Job[] = [
     roleDescription: "Tech Lead",
     specialization: "Web application architecture design/support/implementation. Development team leading.",
     experienceScope:
-      "Participate pre-sales. Application architecture design/support/implement. JS unit team coaching/leading & mentoring. Define stack tools/frameworks. Commercial project audit and support.",
+      "Participate pre-sales. Application architecture design/support/implement. Define stack tools/frameworks. Commercial project audit and support.",
     tools: "AWS, Docker, Nginx. Mongo, PostgreSQL, Atlassian, Docker, Javascript, Typescript, Node.js, Reac, Lerna"
   },
   {

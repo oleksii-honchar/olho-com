@@ -34,7 +34,7 @@ export function SocialLinks(): ReactElement {
           <Icon brand name="facebook" />
         </IconStack>
       </Link>
-      <Link href="https://ua.linkedin.com/in/alekseygonchar">
+      <Link href="https://www.linkedin.com/in/oleksii-honchar/">
         <IconStack size="2x">
           <Icon name="circle" />
           <Icon brand name="linkedin" color="white" transform="shrink-6" />

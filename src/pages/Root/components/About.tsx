@@ -13,23 +13,22 @@ export function About(): ReactElement {
         About
       </h2>
       <p>
-        Hello! My name is Alex. I’m a professional full-cycle software engineer
-        with 10+ years of experience in web technologies. And I have a solid
-        background of desktop integration for different industries since
-        2000-th. Since 2010th I took part in creating business solutions for 3
-        startups, including medical social platform and e-commerce data flow
-        hub. I have a lot of experience in business analysis and building
-        development strategy according to business model and needs.
+        Hello! My name is Alex. I’m an GettingThingDone IT guy with a long story
+        about software development and team management in different domains, processes
+        and technologies. Long time ago I started as an intern within one successful
+        gaming startup. Year after year I was constantly learning, coding and accepting
+        the challenges. Until once I’ve discovered myself helping others to conquer their
+        peaks.  Already 5+ years I’m practicing team management, leading and coaching for
+        teams from 2 up to 40 people.
       </p>
       <p>
-        Driven by business needs I choose the best solution and architecture for
-        quick and long wins. Constructive and consistent approach helps me to
-        conquer uncertainty. I love to be a part of a team of professionals.
+        Driven by business needs I choose the best solution and architecture for quick
+        and long wins. Constructive and consistent approach helps me to conquer uncertainty.
         Ready to take responsibility, execute and delegate for best performance.
       </p>
       <p>
         I’m excited to drive and join development process using agile
-        practices for task management and devops. Among all personal qualities I
+        practices for task management and DevOps. Among all personal qualities I
         would like to notice high personal standards and attention to details.
       </p>
       <p>I&apos;m glad to cooperate!</p>

@@ -14,12 +14,12 @@ export const jobData: Job[] = [
     customer: "AgileEngine",
     year: 2020,
     period: "2.2020 - now",
-    duration: "~6m",
+    duration: "~7m",
     roleDescription: "Tech Lead",
-    specialization: "Web application architecture design/support/implementation. Development team leading.",
+    specialization: "Web application architecture design/support/implementation. Development team leading and mentoring.",
     experienceScope:
       "Participate pre-sales. Application architecture design/support/implement. Define stack tools/frameworks. Commercial project audit and support.",
-    tools: "AWS, Docker, Nginx. Mongo, PostgreSQL, Atlassian, Docker, Javascript, Typescript, Node.js, Reac, Lerna"
+    tools: "AWS, Docker, Nginx. Mongo, PostgreSQL, Atlassian, Docker, Javascript, Typescript, Node.js, React, Lerna"
   },
   {
     customer: "Ciklum",
@@ -38,7 +38,7 @@ export const jobData: Job[] = [
     period: "10.2015 - 10.2017",
     duration: "2y",
     roleDescription: "Frontend Architect & Team lead",
-    specialization: "Massive commentary and monetization platform. Family of micro-frontend commenting applications for integration in digital media portals. Text ads and monetization platform.",
+    specialization: "Massive commentary and monetization platform. Family of micro-frontend commenting applications for integration in digital media portals. Text ads and monetization platform. JS team leadership and mentoring.",
     experienceScope:
       "Analysis and planning. Defining tech stack. Single page app development, microservices, component architecture, team coaching & mentoring.",
     tools:
@@ -50,9 +50,9 @@ export const jobData: Job[] = [
     period: "03.2015 - 08.2015",
     duration: "6m",
     roleDescription: "Team Lead, Chief programmer, UI/UX expert",
-    specialization: "Medical professional and client collaboration platform. It is a social network for consultation and recommendation services. Both medical professionals and clients are able to get paid advice. Professionals have ratings, comments and forums, screening and network of colleagues.",
+    specialization: "Medical professional and client collaboration platform. It is a social network for consultation and recommendation services. Both medical professionals and clients are able to get paid advice. Professionals have ratings, comments and forums, screening and network of colleagues. FE and BE team leadership and mentoring.",
     experienceScope:
-      "Maintain product development from scratch. Analysis and planning. Defining tech scope. Sprint planning. Task management and decomposition. Api development.",
+      "Maintain product development from scratch. Analysis and planning. Defining tech scope. Sprint planning. Task management and decomposition. REST API development.",
     tools:
       "MongoDB, Node-js, Express, React, Flux, Lodash, Gulp, Mocha, Twitter-Bootstrap, AW, Codeship"
   },

@@ -87,7 +87,7 @@ export function HardSkills(): ReactElement {
               <div className="d-flex align-items-center">
                 <h3 className="">Technological experience</h3>&nbsp;
                 <span className="alight-self-start badge badge-info">
-                  1.2020
+                  6.2020
                 </span>
               </div>
             </td>
@@ -97,16 +97,19 @@ export function HardSkills(): ReactElement {
             <td>
               <ul className="float-left">
                 <li>
-                  Javascript/TypeScript <YearsBadge years={11} />
+                  Javascript/TypeScript <YearsBadge years={11.5} />
                 </li>
                 <li>
                   Angular <YearsBadge years={3} />
                 </li>
                 <li>
-                  React, Redux <YearsBadge years={3} />
+                  React, Redux <YearsBadge years={3.5} />
                 </li>
                 <li>
-                  Node.js, Express.js <YearsBadge years={8} />
+                  Node.js, Express.js <YearsBadge years={8.5} />
+                </li>
+                <li>
+                  PostgreSQL <YearsBadge years={1} />
                 </li>
               </ul>
               <ul className="float-left">

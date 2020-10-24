@@ -14,11 +14,11 @@ export const jobData: Job[] = [
     customer: "AgileEngine",
     year: 2020,
     period: "2.2020 - now",
-    duration: "~7m",
+    duration: "~9m",
     roleDescription: "Tech Lead",
     specialization: "Web application architecture design/support/implementation. Development team leading and mentoring.",
     experienceScope:
-      "Participate pre-sales. Application architecture design/support/implement. Define stack tools/frameworks. Commercial project audit and support.",
+      "Participate pre-sales. Application architecture design/support/implement. Define stack tools/frameworks. Commercial project audit and support. Digital media publishing platform support and audit. Proximity marketing platform design and implementation.",
     tools: "AWS, Docker, Nginx. Mongo, PostgreSQL, Atlassian, Docker, Javascript, Typescript, Node.js, React, Lerna"
   },
   {
@@ -26,7 +26,7 @@ export const jobData: Job[] = [
     year: 2020,
     period: "10.2017 - 1.2020",
     duration: "2y 4m",
-    roleDescription: "Application Architect / Tech Lead",
+    roleDescription: "Head Of Unit / Application Architect/ Tech Lead",
     specialization: "JS unit leadership, projects bootstrap/supervision, architecture design/validation. Architecture design and POC implementation for massive market-place using micro-frontend approach with server-side rendering. Architecture design and POC implementation for document management system with form designer and workflow for SaaS platform.",
     experienceScope:
       "Participate pre-sales. Application architecture design/support/implement. JS unit team coaching/leading & mentoring. Define stack tools/frameworks/code standards. Arrange developer learning path and grade assessments. Commercial project audit and support. Development of Internal tools/modules/approaches. Mentoring js unit team leads. Define inter-unit process collaboration.",
@@ -57,22 +57,10 @@ export const jobData: Job[] = [
       "MongoDB, Node-js, Express, React, Flux, Lodash, Gulp, Mocha, Twitter-Bootstrap, AW, Codeship"
   },
   {
-    customer: "Elastic.io",
-    year: 2015,
-    period: "09.2014 - 03.2015",
-    duration: "6m",
-    roleDescription: "Full Stack  Javascript Engineer",
-    specialization: "Cloud service integration platform. SaaS platform which allows using predefined connectors transform data/events from one source to another. E.g. ebay orders to Magento CMS, Wallmart analytics to SalesForce, etc. Buit using microservices in AWS with overall data encryption.",
-    experienceScope:
-      "Intranet communication messages flow encryption, s3 file storage encryption. Custom API to custom API data flow configuration and implementation. Ember.js based application extension. ",
-    tools:
-      "MongoDB, Node-js, Ember.js, Underscore/Lodash, Grunt, Jasmine, Twitter-Bootstrap, Librato, Coveralls, Codeship, Heroku, Github."
-  },
-  {
     customer: "DataArt",
-    year: 2014,
-    period: "03.2014 - 9.2014",
-    duration: "6m",
+    year: 2015,
+    period: "03.2014 - 3.2015",
+    duration: "1y",
     roleDescription: "Senior Software Engineer",
     specialization: "full-stack r&d projects",
     experienceScope: "Social media data mining. Design and deploy node.js microservice based data-crawlers. Build web interface for data mining and analytics",

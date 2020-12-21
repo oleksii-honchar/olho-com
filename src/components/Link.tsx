@@ -5,8 +5,8 @@ export function Link(
   props: InferProps<typeof Link.propTypes>
 ): ReactElement {
   // const href = `javascript:window.open('${props.href}', '_system')`;
-  const href = `javascript:document.location='googlechrome://navigate?url=${props.href}'`;
-  return <a href={href}>{props.children}</a>;
+  // const href = `javascript:document.location='googlechrome://navigate?url=${props.href}'`;
+  return <a href={props.href} target="_blank">{props.children}</a>;
 }
 
 Link.propTypes = {

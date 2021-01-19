@@ -11,15 +11,26 @@ export interface Job {
 
 export const jobData: Job[] = [
   {
+    customer: "RingCentral",
+    year: 2021,
+    period: "11.2020 - now",
+    duration: "~3m",
+    roleDescription: "Solution Architect",
+    specialization: "Architecture design, multi team dependency management, POC implementation for cloud-based video & VoIP conferencing, chat, team collaboration service. Development team mentoring. Development process audit and transformation.",
+    experienceScope:
+      "Solution and application design in a multi component enterprise environment. Development process audit and transformation for the set of teams. DevOps and development best practices implementation. Multi component and multi team dependency tracking.",
+    tools: "AWS, Windows, OSX, Docker, Jenkins, Nginx, PostgreSQL, Atlassian, Javascript, Typescript, Node.js, C#, React, Lerna"
+  },
+  {
     customer: "AgileEngine",
     year: 2020,
-    period: "2.2020 - now",
-    duration: "~9m",
+    period: "2.2020 - 10.2020",
+    duration: "8m",
     roleDescription: "Tech Lead",
     specialization: "Web application architecture design/support/implementation. Development team leading and mentoring.",
     experienceScope:
       "Participate pre-sales. Application architecture design/support/implement. Define stack tools/frameworks. Commercial project audit and support. Digital media publishing platform support and audit. Proximity marketing platform design and implementation.цр",
-    tools: "AWS, Docker, Nginx. Mongo, PostgreSQL, Atlassian, Docker, Javascript, Typescript, Node.js, React, Lerna"
+    tools: "AWS, Docker, Nginx, Mongo, PostgreSQL, Atlassian, Javascript, Typescript, Node.js, React, Lerna"
   },
   {
     customer: "Ciklum",

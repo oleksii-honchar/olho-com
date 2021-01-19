@@ -97,16 +97,16 @@ export function HardSkills(): ReactElement {
             <td>
               <ul className="float-left">
                 <li>
-                  Javascript/TypeScript <YearsBadge years={11.5} />
+                  Javascript/TypeScript <YearsBadge years={12} />
                 </li>
                 <li>
                   Angular <YearsBadge years={3} />
                 </li>
                 <li>
-                  React, Redux <YearsBadge years={3.5} />
+                  React, Redux <YearsBadge years={4} />
                 </li>
                 <li>
-                  Node.js, Express.js <YearsBadge years={8.5} />
+                  Node.js, Express.js <YearsBadge years={9} />
                 </li>
                 <li>
                   PostgreSQL <YearsBadge years={1} />

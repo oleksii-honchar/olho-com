@@ -87,7 +87,7 @@ export function HardSkills(): ReactElement {
               <div className="d-flex align-items-center">
                 <h3 className="">Technological experience</h3>&nbsp;
                 <span className="alight-self-start badge badge-info">
-                  6.2020
+                  1.2021
                 </span>
               </div>
             </td>

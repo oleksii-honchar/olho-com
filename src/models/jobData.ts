@@ -1,3 +1,5 @@
+import moment from "moment";
+
 export interface Job {
   customer: string;
   year: number;
@@ -9,17 +11,21 @@ export interface Job {
   tools: string;
 }
 
+const currentJobStart = moment("2020-11-01");
+const currentDate = moment().endOf('month');
+const currentJobDuration = currentDate.diff(currentJobStart, 'months')
+
 export const jobData: Job[] = [
   {
     customer: "RingCentral",
     year: 2021,
     period: "11.2020 - now",
-    duration: "~3m",
+    duration: `~${currentJobDuration}m`,
     roleDescription: "Solution Architect",
     specialization: "Architecture design, multi team dependency management, POC implementation for cloud-based video & VoIP conferencing, chat, team collaboration service. Development team mentoring. Development process audit and transformation.",
     experienceScope:
       "Solution and application design in a multi component enterprise environment. Development process audit and transformation for the set of teams. DevOps and development best practices implementation. Multi component and multi team dependency tracking.",
-    tools: "AWS, Windows, OSX, Docker, Jenkins, Nginx, PostgreSQL, Atlassian, Javascript, Typescript, Node.js, C#, React, Lerna"
+    tools: "AWS, Windows, OSX, Docker, Jenkins, Nginx, PostgreSQL, Atlassian, Javascript, Typescript, Node.js, C, React, Lerna"
   },
   {
     customer: "AgileEngine",

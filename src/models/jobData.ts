@@ -11,16 +11,27 @@ export interface Job {
   tools: string;
 }
 
-const currentJobStart = moment("2020-11-01");
+const currentJobStart = moment("2021-07-01");
 const currentDate = moment().endOf('month');
-const currentJobDuration = currentDate.diff(currentJobStart, 'months')
+const currentJobDuration = currentDate.diff(currentJobStart, 'months') + 1;
 
 export const jobData: Job[] = [
   {
-    customer: "RingCentral",
+    customer: "AB-SOFT",
     year: 2021,
-    period: "11.2020 - now",
+    period: "7.2021 - now",
     duration: `~${currentJobDuration}m`,
+    roleDescription: "Director Of Engineering",
+    specialization: "<ul><li>Representation of the company, teams, processes, technical capabilities, current state of projects, reports on development, successes and challenges for the customer </li><li> Participation in the strategic planning of new product stages and solutions </li><li> Ensure quality and expanding areas of expertise - Ensure best practices and new technologies for all divisions of the company </li><li> Drive strategic planning of company development from engineering perspective </li><li> Support implementation of “Employee Lifecycle” (annual cycle) to ensure growth / assessment of skills and expertise.</li></ul>",
+    experienceScope:
+      "People Management",
+    tools: "PPT, GROW, 9Grid, SMART, Agile"
+  },
+  {
+    customer: "AB-SOFT",
+    year: 2021,
+    period: "11.2020 - 6.2021",
+    duration: `8m`,
     roleDescription: "Solution Architect",
     specialization: "Architecture design, multi team dependency management, POC implementation for cloud-based video & VoIP conferencing, chat, team collaboration service. Development team mentoring. Development process audit and transformation.",
     experienceScope:

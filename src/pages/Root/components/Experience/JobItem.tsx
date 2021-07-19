@@ -71,7 +71,7 @@ export function JobItem(
             <dd className="col-sm-9">{props.data.roleDescription}</dd>
 
             <dt className="col-sm-3">Specialization</dt>
-            <dd className="col-sm-9">{props.data.specialization}</dd>
+            <dd className="col-sm-9" dangerouslySetInnerHTML={{ __html: props.data.specialization}}></dd>
 
             <dt className="col-sm-3">Experience scope</dt>
             <dd className="col-sm-9">{experienceScope}</dd>

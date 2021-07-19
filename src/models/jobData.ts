@@ -22,7 +22,7 @@ export const jobData: Job[] = [
     period: "7.2021 - now",
     duration: `~${currentJobDuration}m`,
     roleDescription: "Director Of Engineering",
-    specialization: "<ul><li>Representation of the company, teams, processes, technical capabilities, current state of projects, reports on development, successes and challenges for the customer </li><li> Participation in the strategic planning of new product stages and solutions </li><li> Ensure quality and expanding areas of expertise - Ensure best practices and new technologies for all divisions of the company </li><li> Drive strategic planning of company development from engineering perspective </li><li> Support implementation of “Employee Lifecycle” (annual cycle) to ensure growth / assessment of skills and expertise.</li></ul>",
+    specialization: "<ul><li>Representation of the company, teams, processes, technical capabilities, current state of projects, reports on development, successes and challenges for the customer </li><li> Participation in the strategic planning of new product stages and solutions </li><li> Ensure quality and expanding areas of expertise </li><li> Ensure best practices and new technologies for all divisions of the company </li><li> Drive strategic planning of company development from engineering perspective </li><li> Support implementation of “Employee Lifecycle” (annual cycle) to ensure growth / assessment of skills and expertise.</li></ul>",
     experienceScope:
       "People Management",
     tools: "PPT, GROW, 9Grid, SMART, Agile"

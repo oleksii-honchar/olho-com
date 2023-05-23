@@ -8,4 +8,4 @@ env-cmd -f $envFile \
     webpack \
         --config ./configs/webpack.config.js \
         --mode production \
-        --env.BUILD_ANALYZE=$BUILD_ANALYZE
+        --env BUILD_ANALYZE=$BUILD_ANALYZE

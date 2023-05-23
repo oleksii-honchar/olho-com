@@ -10,4 +10,4 @@ env-cmd -f $envFile \
         --watch \
         --progress \
         --mode development \
-        --env.BUILD_ANALYZE=false
+        --env BUILD_ANALYZE=false

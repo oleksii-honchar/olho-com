@@ -8,5 +8,5 @@ env-cmd -f $envFile \
     webpack-dev-server \
         --config ./configs/webpack.config.js \
         --mode development \
-        --env.BUILD_ANALYZE=false \
+        --env BUILD_ANALYZE=false \
         --open

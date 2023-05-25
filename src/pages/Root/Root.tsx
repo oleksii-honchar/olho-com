@@ -1,5 +1,5 @@
 /** @jsx jsx */
-import { css, jsx } from "@emotion/core";
+import { css, jsx } from "@emotion/react";
 import React, { ReactElement } from "react";
 
 import { AppConfigProvider, appConfig } from "src/contexts";
@@ -18,15 +18,15 @@ export function Root(): ReactElement {
     section {
       @media screen and (max-device-width: 375px) {
         font-size: 1rem !important;
-      };
-    
+      }
+
       @media screen and (min-device-width: 376px) and (max-device-width: 768px) {
         font-size: 1.2rem !important;
-      };
-    
+      }
+
       @media screen and (min-device-width: 768px) {
         font-size: 1.4rem !important;
-      };
+      }
     }
   `;
   return (

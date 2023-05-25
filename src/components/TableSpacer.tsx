@@ -1,18 +1,16 @@
 /** @jsx jsx */
-import { css, jsx } from "@emotion/core";
+import { css, jsx } from "@emotion/react";
 import React, { ReactElement } from "react";
-import { useTheme } from "emotion-theming";
+import { useTheme } from "@emotion/react";
 import PropTypes, { InferProps } from "prop-types";
 
-export function TableSpacer(
-  props: InferProps<typeof TableSpacer.propTypes>
-): ReactElement {
+export function TableSpacer(props: InferProps<typeof TableSpacer.propTypes>): ReactElement {
   const theme: any = useTheme();
   const sizeCss = css`
     @media screen and (max-device-width: 375px) {
       width: ${theme.sizes.tableSpacerWidthLittle};
     }
-    
+
     @media screen and (min-device-width: 376px) and (max-device-width: 768px) {
       width: ${theme.sizes.tableSpacerWidthSmall};
     }
@@ -42,9 +40,9 @@ export function TableSpacer(
 }
 
 TableSpacer.propTypes = {
-  color: PropTypes.string
+  color: PropTypes.string,
 };
 
 TableSpacer.defaultProps = {
-  color: 'none'
+  color: "none",
 };

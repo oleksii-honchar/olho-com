@@ -17,13 +17,6 @@ module.exports = (env) => {
   return {
     mode: process.env.NODE_ENV,
     cache: true,
-    devServer: {
-      // http2: true,
-      port: process.env.SERVE_PORT,
-      contentBase: path.join(__dirname, "../../dist"),
-      publicPath: "/assets/",
-      writeToDisk: true,
-    },
     entry: {
       app: "./src/index.tsx",
     },

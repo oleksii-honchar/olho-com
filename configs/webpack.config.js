@@ -9,12 +9,13 @@ const pkg = require("../package.json");
 
 const moduleCfg = require("./webpack/module.config");
 const baseCfg = require("./webpack/base.config");
+const devSrvCfg = require("./webpack/dev-server.config");
 const prodCfg = require("./webpack/prod.config");
 const externalsCfg = require("./webpack/externals.config");
 
 console.log(`[config:webpack] "${pkg.name}" config composition started`);
 
-module.exports = (env) => {
+module.exports = (env, argv) => {
   env = env ? env : {};
   env.BUILD_ANALYZE = env.BUILD_ANALYZE ? env.BUILD_ANALYZE : null;
 
@@ -31,6 +32,10 @@ module.exports = (env) => {
 
   configs[0] = merge(configs[0], externalsCfg);
   configs[1] = merge(configs[1], externalsCfg);
+
+  if (argv.mode === "development") {
+    configs[1] = merge(configs[1], devSrvCfg(envES2022));
+  }
 
   if (env.BUILD_ANALYZE === "true") {
     console.log("[config:webpack] bundle analyzer included");

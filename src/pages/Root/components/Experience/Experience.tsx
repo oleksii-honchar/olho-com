@@ -1,8 +1,8 @@
 /** @jsx jsx */
-import { css, jsx } from "@emotion/core";
+import { css, jsx } from "@emotion/react";
 import React, { ReactElement, Fragment } from "react";
 import { TableSpacer } from "src/components/TableSpacer";
-import { useTheme } from "emotion-theming";
+import { useTheme } from "@emotion/react";
 
 import { jobsModel } from "src/models/jobsModel";
 import { JobItem } from "./JobItem";

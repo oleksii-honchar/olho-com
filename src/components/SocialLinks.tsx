@@ -1,7 +1,7 @@
 /** @jsx jsx */
-import { css, jsx } from "@emotion/core";
+import { css, jsx } from "@emotion/react";
 import React, { ReactElement } from "react";
-import { useTheme } from "emotion-theming";
+import { useTheme } from "@emotion/react";
 
 import { Icon, IconStack } from "src/components/Icon";
 import { Link } from "./Link";

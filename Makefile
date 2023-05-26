@@ -19,15 +19,6 @@ clean-dist:  ## Cleaning ./dist folder
 	@printf "${RED}DONE${NC}\n"
 .PHONY: clean-dist
 
-build-loc: clean-dist ## Build local version
-	@npx env-cmd -f $(envFileLoc) "$(PWD)/devops/local/scripts/check-env-vars.sh"
-	@source $(envFileLoc)
-	@npx env-cmd -f $(envFileLoc) webpack \
-		--config ./configs/webpack.config.js \
-		--mode development \
-		--env BUILD_ANALYZE=$(BUILD_ANALYZE)
-	@printf "${GREEN}build-loc: DONE${NC}\n"
-
 build: clean-dist ## Build production version
 	@npx env-cmd -f $(envFileProd) "$(PWD)/devops/local/scripts/check-env-vars.sh"
 	@source $(envFileProd)
@@ -38,7 +29,23 @@ build: clean-dist ## Build production version
 
 	@printf "${GREEN}build: DONE${NC}\n"
 
-launch-dev-server: ## Launches local Webpack dev-server
+build-analyze: # build and analyze bundle content
+	$(MAKE) build BUILD_ANALYZE=true
+
+build-loc: clean-dist ## Build local version
+	@npx env-cmd -f $(envFileLoc) "$(PWD)/devops/local/scripts/check-env-vars.sh"
+	@source $(envFileLoc)
+	@npx env-cmd -f $(envFileLoc) webpack \
+		--config ./configs/webpack.config.js \
+		--mode development \
+		--env BUILD_ANALYZE=$(BUILD_ANALYZE)
+	@printf "${GREEN}build-loc: DONE${NC}\n"
+
+build-loc-analyze: # build and analyze bundle content
+	$(MAKE) build-loc BUILD_ANALYZE=true
+
+
+launch-dev-server: # Launches local Webpack dev-server
 	@npx env-cmd -f $(envFileLoc) "${PWD}/devops/local/scripts/check-env-vars.sh"
 	@source ${envFileLoc}
 	@npx env-cmd -f ${envFileLoc} webpack-dev-server \
@@ -46,3 +53,13 @@ launch-dev-server: ## Launches local Webpack dev-server
 		--mode development \
 		--env BUILD_ANALYZE=false \
 		--open
+
+watch-loc: # No dev server - only file watch and rebuild
+	@npx env-cmd -f $(envFileLoc) "${PWD}/devops/local/scripts/check-env-vars.sh"
+	@source ${envFileLoc}
+	@npx env-cmd -f ${envFileLoc} webpack \
+		--config ./configs/webpack.config.js \
+		--watch \
+		--progress \
+		--mode development \
+		--env BUILD_ANALYZE=false \

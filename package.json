@@ -1,27 +1,24 @@
 {
   "name": "olho-com",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "",
   "main": "src/index.tsx",
   "scripts": {
-    "prebuild": "npm run clean:dist",
-    "prebuild:loc": "npm run clean:dist",
-    "build": "bash scripts/build.sh",
-    "build:analyze": "cross-env-shell BUILD_ANALYZE=true bash ./scripts/build.sh",
-    "build:loc": "bash scripts/build.loc.sh",
-    "build:loc:analyze": "cross-env-shell BUILD_ANALYZE=true bash ./scripts/build.loc.sh",
+    "build": "make build",
+    "build:analyze": "make build-analyze",
+    "build:loc": "make build-loc",
+    "build:loc:analyze": "make build-loc-analyze",
     "cm": "npx git-cz",
     "check:all": "run-p lint:fix types:check",
-    "clean:dist": "rm -rf dist",
     "launch:loc": "run-p launch:dev-server types:watch",
-    "launch:dev-server": "bash ./scripts/launch.dev-server.sh",
+    "launch:dev-server": "make launch-dev-server",
     "lint": "npx eslint src --config ./configs/eslint.config.js  --ext .ts,.tsx,.json --ignore-pattern '/node_modules/*' --ignore-pattern '**/*.d.ts' --ignore-pattern '**/*.spec.ts' --ignore-pattern '/src/assets/**'",
     "lint:fix": "npm run lint -- --fix",
     "start": "npm run launch:loc",
     "types:check": "tsc -p tsconfig.json",
     "types:watch": "npm run types:check -- --watch",
     "watch": "run-p types:watch watch:loc",
-    "watch:loc": "bash scripts/watch.loc.sh"
+    "watch:loc": "make watch-loc"
   },
   "config": {
     "commitizen": {

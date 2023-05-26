@@ -40,11 +40,16 @@ module.exports = (env, argv) => {
   if (env.BUILD_ANALYZE === "true") {
     console.log("[config:webpack] bundle analyzer included");
 
-    configs = configs.map((cfg) =>
-      merge(cfg, {
-        plugins: [new BundleAnalyzerPlugin()],
-      }),
-    );
+    configs[1] = merge(configs[1], {
+      plugins: [new BundleAnalyzerPlugin()],
+    });
+
+    // causing "addr in use" conflict. Keep only EsNext bundle for analysis above
+    // configs = configs.map((cfg) =>
+    //   merge(cfg, {
+    //     plugins: [new BundleAnalyzerPlugin()],
+    //   }),
+    // );
   }
 
   if (process.env.NODE_ENV !== "production") {

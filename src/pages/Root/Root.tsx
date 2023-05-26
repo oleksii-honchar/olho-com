@@ -14,18 +14,76 @@ import { About } from "./components/About";
 import { HardSkills } from "./components/HardSkills";
 
 export function Root(): ReactElement {
+  const headers0 = css`
+    h1 {
+      font-size: 1.3rem;
+    }
+
+    h2 {
+      font-size: 1.2rem;
+    }
+
+    h3 {
+      font-size: 1.1rem;
+    }
+
+    h4 {
+      font-size: 1rem;
+    }
+
+    h5 {
+      font-size: 1rem;
+    }
+
+    h6 {
+      font-size: 1rem;
+    }
+  `;
+  const headers1 = css`
+    h1 {
+      font-size: 2rem;
+    }
+
+    h2 {
+      font-size: 1.5rem;
+    }
+
+    h3 {
+      font-size: 1.3rem;
+    }
+
+    h4 {
+      font-size: 1.2rem;
+    }
+
+    h5 {
+      font-size: 1.1rem;
+    }
+
+    h6 {
+      font-size: 1rem;
+    }
+  `;
   const rootCss = css`
     section {
       @media screen and (max-device-width: 375px) {
-        font-size: 1rem !important;
+        ${headers0}
       }
 
       @media screen and (min-device-width: 376px) and (max-device-width: 768px) {
-        font-size: 1.2rem !important;
+        ${headers0}
       }
 
       @media screen and (min-device-width: 768px) {
-        font-size: 1.4rem !important;
+        ${headers1}
+      }
+
+      @media screen and (min-device-width: 1200px) {
+        ${headers1}
+      }
+
+      @media screen and (min-device-width: 1600px) {
+        ${headers1}
       }
     }
   `;

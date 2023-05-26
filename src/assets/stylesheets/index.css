@@ -1,5 +1,9 @@
 @import "reset.css";
 
+html {
+  font-size: calc(15px + 0.390625vw);
+}
+
 body {
   font-family: 'Helvetica Neue', sans-serif !important;
 }
@@ -17,4 +21,3 @@ tr,
 td {
   border: none !important;
 }
-

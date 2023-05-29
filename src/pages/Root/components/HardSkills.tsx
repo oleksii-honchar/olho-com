@@ -1,7 +1,7 @@
 /** @jsx jsx */
-import { css, jsx } from "@emotion/core";
+import { css, jsx } from "@emotion/react";
 import React, { ReactElement, Fragment } from "react";
-import { useTheme } from "emotion-theming";
+import { useTheme } from "@emotion/react";
 
 import { YearsBadge } from "src/components/YearsBadge";
 import { TableSpacer } from "src/components/TableSpacer";
@@ -14,70 +14,72 @@ export function HardSkills(): ReactElement {
       max-width: 500px;
     }
     td {
-      @media screen and (max-device-width: 375px) { padding: 0.1rem; }
-      @media screen and (min-device-width: 376px) { padding: 0.75rem; }
-    }  
+      @media screen and (max-device-width: 375px) {
+        padding: 0.1rem;
+      }
+      @media screen and (min-device-width: 376px) {
+        padding: 0.75rem;
+      }
+    }
   `;
   const rustyColorCss = css`
     color: darkgray;
   `;
 
-  const CellSpacer = (): ReactElement => (
-    <TableSpacer color={theme.colors.sections.hardSkills.spacerBackground} />
-  );
+  const CellSpacer = (): ReactElement => <TableSpacer color={theme.colors.sections.hardSkills.spacerBackground} />;
 
   return (
     <section id="hard-skills" css={hardSkillsCss}>
       <h2>Hard skills</h2>
       <div className="clearfix">
-      <table className="table float-left">
-        <tbody>
-          <tr className="d-flex">
-            <CellSpacer />
-            <td>
-              <h3>Frontend</h3>
-              <ul>
-                <li>JavaScript / TypesScript</li>
-                <li>Angular, RxJs, Lodash, HTML, HBS, Jade</li>
-                <li>React, Redux</li>
-                <li>Jest, Mocha, Jasmine, Cucumber</li>
-                <li>Webpack/Gulp</li>
-                <li>CSS,SASS, Styled, Styl, LESS, Twitter-Bootstrap</li>
-              </ul>
-              <h3>Backend</h3>
-              <ul>
-                <li>Node.js, Express.js, WebSocket, Socket.io, Ruby</li>
-              </ul>
-            </td>
-          </tr>
-        </tbody>
-      </table>
+        <table className="table float-left">
+          <tbody>
+            <tr className="d-flex">
+              <CellSpacer />
+              <td>
+                <h3>Frontend</h3>
+                <ul>
+                  <li>JavaScript / TypesScript</li>
+                  <li>Angular, RxJs, Lodash, HTML, HBS, Jade</li>
+                  <li>React, Redux</li>
+                  <li>Jest, Mocha, Jasmine, Cucumber</li>
+                  <li>Webpack/Gulp</li>
+                  <li>CSS,SASS, Styled, Styl, LESS, Twitter-Bootstrap</li>
+                </ul>
+                <h3>Backend</h3>
+                <ul>
+                  <li>Node.js, Express.js, WebSocket, Socket.io, Ruby</li>
+                </ul>
+              </td>
+            </tr>
+          </tbody>
+        </table>
 
-      <table className="table float-left">
-        <tbody>
-          <tr className="d-flex">
-            <CellSpacer />
-            <td>
-              <h3>Database</h3>
-              <ul>
-                <li>PostgreSQL, MongoDB, Redis, Couchbase</li>
-              </ul>
+        <table className="table float-left">
+          <tbody>
+            <tr className="d-flex">
+              <CellSpacer />
+              <td>
+                <h3>Database</h3>
+                <ul>
+                  <li>PostgreSQL, MongoDB, Redis, Couchbase</li>
+                </ul>
 
-              <h3>Cloud/Ops</h3>
-              <ul>
-                <li>AWS, Google Cloud</li>
-                <li>Docker, Nginx, Kafka, RabbitMQ</li>
-              </ul>
+                <h3>Cloud/Ops</h3>
+                <ul>
+                  <li>AWS, Google Cloud</li>
+                  <li>Docker, Nginx, Kafka, RabbitMQ</li>
+                </ul>
 
-              <h3>Languages</h3>
-              <ul>
-                <li>Russian/Ukrainian - fluently</li>
-                <li>English - advanced</li>
-              </ul>
-            </td>
-          </tr>
-        </tbody>
-      </table>
+                <h3>Languages</h3>
+                <ul>
+                  <li>Russian/Ukrainian - fluently</li>
+                  <li>English - advanced</li>
+                </ul>
+              </td>
+            </tr>
+          </tbody>
+        </table>
       </div>
       <table className="table">
         <tbody>
@@ -86,9 +88,7 @@ export function HardSkills(): ReactElement {
             <td>
               <div className="d-flex align-items-center">
                 <h3 className="">Technological experience</h3>&nbsp;
-                <span className="alight-self-start badge badge-info">
-                  1.2021
-                </span>
+                <span className="alight-self-start badge badge-info">1.2021</span>
               </div>
             </td>
           </tr>

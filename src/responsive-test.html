@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Responsive Design Testing</title>
+  <style>
+      body { margin: 20px; font-family: sans-serif; overflow-x: scroll; }
+      .wrapper { width: 6000px; }
+      .frame { float: left; }
+      h2 { margin: 0 0 5px 0; }
+      iframe { margin: 0 20px 20px 0; border: 1px solid #666; }
+  </style>
+</head>
+<body>
+<div class="wrapper">
+  <div class="frame">
+    <h2>360 &times; 800 <small>(xs)</small></h2>
+    <iframe
+      id="frame-2xs"
+      src="http://localhost:8000/"
+      width="360" height="800"
+    ></iframe>
+  </div>
+  <div class="frame">
+    <h2>576 &times; 900 <small>(sm)</small></h2>
+    <iframe src="http://localhost:8000/" sandbox="allow-same-origin allow-forms allow-scripts" width="576" height="900"></iframe>
+  </div>
+  <div class="frame">
+    <h2>768 &times; 1024 <small>(md)</small></h2>
+    <iframe src="http://localhost:8000/" sandbox="allow-same-origin allow-forms allow-scripts" width="768" height="1024"></iframe>
+  </div>
+  <div class="frame">
+    <h2>992 &times; 1200 <small>(lg)</small></h2>
+    <iframe src="http://localhost:8000/" sandbox="allow-same-origin allow-forms allow-scripts" width="992" height="1200"></iframe>
+  </div>
+  <div class="frame">
+    <h2>1200 &times; 700 <small>(xl)</small></h2>
+    <iframe src="http://localhost:8000/" sandbox="allow-same-origin allow-forms allow-scripts" width="1200" height="700"></iframe>
+  </div>
+  <div class="frame">
+    <h2>1400 &times; 900 <small>(2xl)</small></h2>
+    <iframe src="http://localhost:8000/" sandbox="allow-same-origin allow-forms allow-scripts" width="1400" height="900"></iframe>
+  </div>
+</div>
+</body>
+</html>

@@ -1,5 +1,5 @@
 /** @jsx jsx */
-import { css, jsx } from "@emotion/core";
+import { css, jsx } from "@emotion/react";
 import React, { ReactElement } from "react";
 
 import { AppConfigProvider, appConfig } from "src/contexts";
@@ -14,29 +14,14 @@ import { About } from "./components/About";
 import { HardSkills } from "./components/HardSkills";
 
 export function Root(): ReactElement {
-  const rootCss = css`
-    section {
-      @media screen and (max-device-width: 375px) {
-        font-size: 1rem !important;
-      };
-    
-      @media screen and (min-device-width: 376px) and (max-device-width: 768px) {
-        font-size: 1.2rem !important;
-      };
-    
-      @media screen and (min-device-width: 768px) {
-        font-size: 1.4rem !important;
-      };
-    }
-  `;
   return (
     <AppConfigProvider value={appConfig}>
       <StyleThemeProvider>
         <Navigation />
-        <div className="container-fluid" css={rootCss}>
+        <div className="container-fluid">
           <Header />
           <div className="row justify-content-center">
-            <div className="col col-sm-12 col-md-10 col-lg-9">
+            <div className="col col-sm-12 col-md-9 col-lg-7">
               <About />
               <HardSkills />
               <SoftSkills />

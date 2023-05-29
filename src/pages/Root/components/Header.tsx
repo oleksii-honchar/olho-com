@@ -1,8 +1,8 @@
 /** @jsx jsx */
-import { jsx } from "@emotion/core";
+import { jsx } from "@emotion/react";
 import React, { ReactElement } from "react";
 
-import { headerCss} from "./Header.style"
+import { headerCss } from "./Header.style";
 
 export function Header(): ReactElement {
   return (
@@ -12,12 +12,8 @@ export function Header(): ReactElement {
           <img src="images/userpic-03.jpg" />
         </div>
         <div className="d-flex flex-column justify-content-center full-name-container">
-          <h1 className="align-self-center white-shadow full-name">
-            Oleksii Honchar
-          </h1>
-          <h5 className="align-self-center white-shadow full-title">
-            Full-cycle Software Engineer
-          </h5>
+          <h1 className="align-self-center white-shadow full-name">Oleksii Honchar</h1>
+          <h5 className="align-self-center white-shadow full-title">Full-cycle Software Engineer</h5>
         </div>
       </div>
     </div>

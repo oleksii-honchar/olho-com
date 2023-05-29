@@ -1,5 +1,5 @@
 /** @jsx jsx */
-import { css, jsx } from "@emotion/core";
+import { css, jsx } from "@emotion/react";
 
 export const headerCss = css`
   background-image: url("images/bg-02-flipped.jpg");
@@ -23,9 +23,8 @@ export const headerCss = css`
   }
 
   .white-shadow {
-    text-shadow: #fff 0px 0px 5px, #fff 0px 0px 10px, #fff 0px 0px 15px,
-      #fff 0px 0px 10px, #fff 0px 0px 10px, #fff 0px 0px 10px,
-      #fff 0px 0px 10px, #fff 0px 0px 10px, #fff 0px 0px 10px;
+    text-shadow: #fff 0px 0px 5px, #fff 0px 0px 10px, #fff 0px 0px 15px, #fff 0px 0px 10px, #fff 0px 0px 10px,
+      #fff 0px 0px 10px, #fff 0px 0px 10px, #fff 0px 0px 10px, #fff 0px 0px 10px;
   }
 
   a {
@@ -56,16 +55,32 @@ export const headerCss = css`
   }
 
   .full-name {
-    @media screen and (max-device-width: 375px) { font-size: 1.8rem; }
-    @media screen and (min-device-width: 376px) and (max-device-width: 768px) { font-size: 2rem; }
-    @media screen and (min-device-width: 769px) and (max-device-width: 1200px) { font-size: 2.5rem; }
-    @media screen and (min-device-width: 1201px) { font-size: 3.6rem; }
+    //@media screen and (max-device-width: 375px) {
+    //  font-size: 1.8rem;
+    //}
+    //@media screen and (min-device-width: 376px) and (max-device-width: 768px) {
+    //  font-size: 2rem;
+    //}
+    //@media screen and (min-device-width: 769px) and (max-device-width: 1200px) {
+    //  font-size: 2.5rem;
+    //}
+    //@media screen and (min-device-width: 1201px) {
+    //  //font-size: 3.6rem;
+    //}
   }
-  
+
   .full-title {
-    @media screen and (max-device-width: 375px) { font-size: 0.8rem; }
-    @media screen and (min-device-width: 376px) and (max-device-width: 768px) { font-size: 1rem;}
-    @media screen and (min-device-width: 769px) and (max-device-width: 1200px) { font-size: 1.25rem; }
-    @media screen and (min-device-width: 1201px) { font-size: 1.5rem; }
+    @media screen and (max-device-width: 375px) {
+      font-size: 0.8rem;
+    }
+    @media screen and (min-device-width: 376px) and (max-device-width: 768px) {
+      font-size: 1rem;
+    }
+    @media screen and (min-device-width: 769px) and (max-device-width: 1200px) {
+      font-size: 1.25rem;
+    }
+    @media screen and (min-device-width: 1201px) {
+      //font-size: 1.5rem;
+    }
   }
 `;

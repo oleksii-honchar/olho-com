@@ -55,18 +55,18 @@ export const headerCss = css`
   }
 
   .full-name {
-    @media screen and (max-device-width: 375px) {
-      font-size: 1.8rem;
-    }
-    @media screen and (min-device-width: 376px) and (max-device-width: 768px) {
-      font-size: 2rem;
-    }
-    @media screen and (min-device-width: 769px) and (max-device-width: 1200px) {
-      font-size: 2.5rem;
-    }
-    @media screen and (min-device-width: 1201px) {
-      font-size: 3.6rem;
-    }
+    //@media screen and (max-device-width: 375px) {
+    //  font-size: 1.8rem;
+    //}
+    //@media screen and (min-device-width: 376px) and (max-device-width: 768px) {
+    //  font-size: 2rem;
+    //}
+    //@media screen and (min-device-width: 769px) and (max-device-width: 1200px) {
+    //  font-size: 2.5rem;
+    //}
+    //@media screen and (min-device-width: 1201px) {
+    //  //font-size: 3.6rem;
+    //}
   }
 
   .full-title {
@@ -80,7 +80,7 @@ export const headerCss = css`
       font-size: 1.25rem;
     }
     @media screen and (min-device-width: 1201px) {
-      font-size: 1.5rem;
+      //font-size: 1.5rem;
     }
   }
 `;

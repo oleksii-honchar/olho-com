@@ -1,4 +1,2 @@
 # olho-com
 OleksiiHonchar.com
-
-

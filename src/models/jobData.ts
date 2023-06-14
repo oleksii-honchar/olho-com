@@ -34,7 +34,7 @@ export const jobData: Job[] = [
       "Google Kubernetes Engine (GKE), Solution Architecture, Amazon Web Services (AWS), TypeScript, React.js, Docker, PostgreSQL, Domain-Driven Design (DDD), JavaScript, Node.jsSkills",
   },
   {
-    customer: "AB-SOFT",
+    customer: "Ringcentral",
     year: 2021,
     period: "7.2021 - 2.2023",
     duration: `1y 8m`,
@@ -45,7 +45,7 @@ export const jobData: Job[] = [
     tools: "PPT, GROW, 9Grid, SMART, Agile",
   },
   {
-    customer: "AB-SOFT",
+    customer: "Ringcentral",
     year: 2021,
     period: "11.2020 - 6.2021",
     duration: `8m`,

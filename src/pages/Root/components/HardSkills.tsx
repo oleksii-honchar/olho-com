@@ -93,7 +93,7 @@ export function HardSkills(): ReactElement {
             <td>
               <div className="d-flex align-items-center">
                 <h3 className="">Technological experience</h3>&nbsp;
-                <span className="alight-self-start badge badge-info">1.2021</span>
+                <span className="alight-self-start badge badge-info">6.2023</span>
               </div>
             </td>
           </tr>

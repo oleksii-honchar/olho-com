@@ -13,7 +13,7 @@ export function Header(): ReactElement {
         </div>
         <div className="d-flex flex-column justify-content-center full-name-container">
           <h1 className="align-self-center white-shadow full-name">Oleksii Honchar</h1>
-          <h5 className="align-self-center white-shadow full-title">Full-cycle Software Engineer</h5>
+          <h5 className="align-self-center white-shadow full-title">Senior Staff Software Engineer</h5>
         </div>
       </div>
     </div>

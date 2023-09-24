@@ -40,15 +40,16 @@ export function HardSkills(): ReactElement {
                 <h3>Frontend</h3>
                 <ul>
                   <li>JavaScript / TypesScript</li>
-                  <li>Angular, RxJs, Lodash, HTML, HBS, Jade</li>
                   <li>React, Redux</li>
-                  <li>Jest, Mocha, Jasmine, Cucumber</li>
-                  <li>Webpack/Gulp</li>
-                  <li>CSS,SASS, Styled, Styl, LESS, Twitter-Bootstrap</li>
+                  <li>Angular, RxJs, Lodash, HTML, HBS, Jade</li>
+                  <li>Jest, Mocha, Cucumber</li>
+                  <li>Webpack, Parcel, Vite</li>
+                  <li>CSS, SASS, TailWindCss</li>
                 </ul>
                 <h3>Backend</h3>
                 <ul>
-                  <li>Node.js, Express.js, WebSocket, Socket.io, Ruby</li>
+                  <li>Node.js, Fastify.js, Express.js, WebSocket, Socket.io</li>
+                  <li>Go, Python, Ruby</li>
                 </ul>
               </td>
             </tr>
@@ -67,14 +68,18 @@ export function HardSkills(): ReactElement {
 
                 <h3>Cloud/Ops</h3>
                 <ul>
-                  <li>AWS, Google Cloud</li>
+                  <li>AWS, GCP</li>
+                  <li>Terraform, CDKTF</li>
                   <li>Docker, Nginx, Kafka, RabbitMQ</li>
+                  <li>Grafana LGTM stack</li>
                 </ul>
 
                 <h3>Languages</h3>
                 <ul>
-                  <li>Russian/Ukrainian - fluently</li>
-                  <li>English - advanced</li>
+                  <li>English (C1)</li>
+                  <li>Spanish (A1)</li>
+                  <li>Ukrainian (native)</li>
+                  <li>Russian (C1)</li>
                 </ul>
               </td>
             </tr>
@@ -97,16 +102,13 @@ export function HardSkills(): ReactElement {
             <td>
               <ul className="float-left">
                 <li>
-                  Javascript/TypeScript <YearsBadge years={12} />
-                </li>
-                <li>
-                  Angular <YearsBadge years={3} />
+                  Javascript/TypeScript <YearsBadge years={12.5} />
                 </li>
                 <li>
                   React, Redux <YearsBadge years={4} />
                 </li>
                 <li>
-                  Node.js, Express.js <YearsBadge years={9} />
+                  Node.js <YearsBadge years={9.5} />
                 </li>
                 <li>
                   PostgreSQL <YearsBadge years={1} />
@@ -117,17 +119,8 @@ export function HardSkills(): ReactElement {
                   MongoDB(Mongoose) <YearsBadge years={5.5} />
                 </li>
                 <li>
-                  <span css={rustyColorCss}>Require.js +CoffeScript</span>
-                  &nbsp;
-                  <YearsBadge years={4.5} />
-                </li>
-                <li>
                   <span css={rustyColorCss}>Ruby, R’o’R</span>&nbsp;
                   <YearsBadge years={2} />
-                </li>
-                <li>
-                  <span css={rustyColorCss}>1c</span>&nbsp;
-                  <YearsBadge years={11} />
                 </li>
               </ul>
             </td>

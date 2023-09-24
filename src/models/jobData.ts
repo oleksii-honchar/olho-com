@@ -21,41 +21,40 @@ export const jobData: Job[] = [
     year: 2023,
     period: "4.2023 - now",
     duration: `~${currentJobDuration}m`,
-    roleDescription: "Software Solutions Architect",
-    specialization: `Responsibilities:
+    roleDescription: "Senior Staff Engineer",
+    specialization: `Achievements:
         <ul>
-        <li>Technical initiatives discovery and analysis</li>
-        <li>Product platform solutions design and RFC processing</li>
-        <li>Contribution to and support of "Development Experience"</li>
-        <li>Close collaboration, mentoring, and support of multiple engineering teams on process and solution improvements"</li>
+        <li>Discovered and analyzed technical initiatives, identifying opportunities for improvement and growth</li>
+        <li>Designed Tax Product platform solutions and processed RFCs, ensuring effective and compliant solutions</li>
+        <li>Developed and supported the "Internal Development Platform," enabling efficient and streamlined workflows</li>
+        <li>Led engineering teams in improving "Development Experience" tooling and practices, enhancing productivity and quality</li>
+        <li>Collaborated closely with multiple engineering teams, providing mentoring and support to drive process and solution improvements</li>
         </ul>`,
     experienceScope: "Software Architecture & Engineering",
     tools:
-      "Google Kubernetes Engine (GKE), Solution Architecture, Amazon Web Services (AWS), TypeScript, React.js, Docker, PostgreSQL, Domain-Driven Design (DDD), JavaScript, Node.jsSkills",
+      "Google Kubernetes Engine (GKE), Solution Architecture, Amazon Web Services (AWS), TypeScript, Continuous Integration and Continuous Delivery (CI/CD), React.js, Docker, PostgreSQL, Domain-Driven Design (DDD), Node.js, Nginx, Terraform, CDKTF",
   },
   {
     customer: "Ringcentral",
-    year: 2021,
-    period: "7.2021 - 2.2023",
-    duration: `1y 8m`,
-    roleDescription: "Director Of Engineering",
-    specialization:
-      "<ul><li>Representation of the company, teams, processes, technical capabilities, current state of projects, reports on development, successes and challenges for the customer </li><li> Participation in the strategic planning of new product stages and solutions </li><li> Ensure quality and expanding areas of expertise </li><li> Ensure best practices and new technologies for all divisions of the company </li><li> Drive strategic planning of company development from engineering perspective </li><li> Support implementation of “Employee Lifecycle” (annual cycle) to ensure growth / assessment of skills and expertise.</li></ul>",
-    experienceScope: "People Management",
-    tools: "PPT, GROW, 9Grid, SMART, Agile",
-  },
-  {
-    customer: "Ringcentral",
-    year: 2021,
-    period: "11.2020 - 6.2021",
-    duration: `8m`,
-    roleDescription: "Solution Architect",
-    specialization:
-      "Architecture design, multi team dependency management, POC implementation for cloud-based video & VoIP conferencing, chat, team collaboration service. Development team mentoring. Development process audit and transformation.",
+    year: 2020,
+    period: "11.2020 - 3.2023",
+    duration: `2y 4m`,
+    roleDescription: "Senior Staff Engineer",
+    specialization: `Achievements:
+      <ul>
+      <li>Developed and designed a change management strategy and plan according to the ACMP Standard, based on the company's strategic goals for a Transformation plan. Applied ADKAR and PPT model for change implementation</li>
+      <li>Defined technical skills using  SFIA framework, and developing performance management in the company</li>
+      <li>Successfully completed "Business Continuity and Recovery" initiative in response to the Russia-Ukraine conflict in February 2022, including the migration of VPN solutions infrastructure and critical on-premise HW to the cloud, UA office blackout tests to train teams and check remediation scenarios, and EU office preparation to provide necessary services</li>
+      <li>Successfully drove, led, and managed various Security and IT initiatives, including onboarding processes to new vendors, preparing employee HW tiers, conducting new MFA (2FA) solution research and development, managing company subscriptions, services accounting, and renewals, budgeting for email and accounts, IT and security, and IT infrastructure design for the EU office</li>
+      <li>Successfully prepared various IT and security standards, procedures, policies, and documentation in collaboration with the IT and security teams, including Compliance Assessment & Violation Policy, Host Ownership And Governance Policy, Account Management Policy, etc</li>
+      <li>Successfully designed and managed the implementation of the DevOps inspired complex CI/CD strategy with multiple pipeline builder jobs for the "team chat application combined with video conferencing," which included building custom Jenkins images, dynamically inserting updated Jenkins jobs to the container using JJB, and provisioning custom Windows/MacOS/Ubuntu Jenkins builders with related instruction for every operating system</li>
+      <li>Successfully designed and implemented a working prototype of an extension for the core product of an international UCaaS platform - team chat application combined with video conferencing. Oleksii successfully isolated internal video services and decoupled them to have separate customizable application builds for different clients, and the main technology stack was JavaScript, React.js, Node.js, and Electron.js</li>
+      </ul>
+    `,
     experienceScope:
       "Solution and application design in a multi component enterprise environment. Development process audit and transformation for the set of teams. DevOps and development best practices implementation. Multi component and multi team dependency tracking.",
     tools:
-      "AWS, Windows, OSX, Docker, Jenkins, Nginx, PostgreSQL, Atlassian, Javascript, Typescript, Node.js, C, React, Lerna",
+      "AWS, Windows, OSX, Docker, Jenkins, Nginx, PostgreSQL, Atlassian, Javascript, Typescript, Node.js, C#, React, Lerna, UCaaS, AWS Cloud, PPT, GROW, 9Grid, SMART, Agile, Polarity Management, ACMP, SFIA",
   },
   {
     customer: "AgileEngine",

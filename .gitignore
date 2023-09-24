@@ -16,3 +16,5 @@ logs/*
 node_modules/
 devops/version/
 tmp
+.history
+.DS_Store

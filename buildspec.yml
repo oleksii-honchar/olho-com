@@ -6,7 +6,6 @@ phases:
       nodejs: 18
     commands:
       - echo Bootstrapping build dependencies...
-      - npm i npm@latest -g
       - pip install --upgrade pip
       - pip install --upgrade awscli
   pre_build:

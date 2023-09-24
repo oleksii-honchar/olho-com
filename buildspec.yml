@@ -23,7 +23,8 @@ phases:
       - aws s3 sync ./dist $S3_BUCKET --delete
       - echo Scheduling CloudFront invalidation...
       - aws cloudfront create-invalidation --distribution-id $DISTRIBUTION_ID --paths "/*"
-image: aws/codebuild/standard:5.0
+environment:
+  image: aws/codebuild/standard:5.0
 cache:
   paths:
     - './node_modules/**/*'
